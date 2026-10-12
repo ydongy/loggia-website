@@ -1,4 +1,3 @@
-<!-- template: website/THIRD_PARTY.md v1 -->
 # Third-party software
 
 | Name | Version | License | Notice |

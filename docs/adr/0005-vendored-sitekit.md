@@ -1,4 +1,3 @@
-<!-- template: adr.md v1 -->
 # 0005 The generator is ydongy's sitekit, vendored into scripts/sitekit
 
 - Status: accepted

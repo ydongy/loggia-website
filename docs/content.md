@@ -1,4 +1,3 @@
-<!-- template: website/content.md v1 -->
 # Content
 
 ## Pages
@@ -33,11 +32,10 @@
 
 ## Facts
 
-Every number or promise in the copy has one source: the app's facts table, "Facts that must match the code" in
-https://github.com/ydongy/loggia/blob/main/docs/legal.md#facts-that-must-match-the-code. The table
+Every number or promise in the copy has one source: the product's facts table (maintained with the product, not
+published). The table
 below is this site's copy of the values that appear in the text; `scripts/check_facts.py` reads it. When an app
-fact changes, the app's legal document and this table change together, in two pull requests that link each
-other, and the copy of every language follows.
+fact changes, the product's legal facts and this table change together, and the copy of every language follows.
 
 | Fact | Value | Where stated |
 |---|---|---|
@@ -59,9 +57,8 @@ pricing table, the three legal links and the contact address in every footer, an
 
 ## Languages and translation
 
-The nine languages, their codes and the rules for translating are in `handbook/guides/localization.md` of the
-ydongy handbook (`https://github.com/ydongy/.github/tree/6b48552c969c28a954498123bb502a556f8eed79/handbook`). English is the
+The nine languages and their codes are listed in `i18n/languages.json`. English is the
 reference; Chinese is not a second reference. Every non-English legal page opens with a note that the English
-text is the reference. To add a language, follow `handbook/types/app/playbooks/add-language.md`. `check_i18n.py` compares
+text is the reference. To add a language, see "Languages" in the README. `check_i18n.py` compares
 every language file with `en.json`: the same structure, HTML tags, links and placeholders, and no em or en
 dashes.

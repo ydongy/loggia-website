@@ -1,4 +1,3 @@
-<!-- template: adr.md v1 -->
 # 0003 Every page has exactly one address and there are no redirects
 
 - Status: accepted

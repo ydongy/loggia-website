@@ -1,4 +1,3 @@
-<!-- template: adr.md v1 -->
 # 0004 A strict Content-Security-Policy in public/_headers
 
 - Status: accepted

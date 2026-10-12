@@ -1,4 +1,3 @@
-<!-- template: adr.md v1 -->
 # 0008 The site counts visits with Cloudflare Web Analytics and nothing else
 
 - Status: accepted

@@ -1,4 +1,3 @@
-<!-- template: website/design.md v1 -->
 # Website design
 
 The site is near-monochrome, typeset in the system fonts, and uses color only for status: the brand green belongs

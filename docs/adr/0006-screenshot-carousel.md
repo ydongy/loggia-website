@@ -1,4 +1,3 @@
-<!-- template: adr.md v1 -->
 # 0006 The home page shows real screenshots in a scroll-snap carousel
 
 - Status: accepted

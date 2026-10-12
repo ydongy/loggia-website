@@ -1,4 +1,3 @@
-<!-- template: adr.md v1 -->
 # 0002 The site has no analytics and sets no cookies
 
 - Status: superseded by [0008](0008-cloudflare-web-analytics.md)
