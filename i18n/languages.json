@@ -1,0 +1,11 @@
+[
+  {"code": "en", "path": "", "html": "en", "match": ["en"]},
+  {"code": "zh", "path": "/zh", "html": "zh-CN", "match": ["zh-hans", "zh-cn", "zh-sg", "zh"]},
+  {"code": "zh-hant", "path": "/zh-hant", "html": "zh-Hant", "match": ["zh-hant", "zh-tw", "zh-hk", "zh-mo"]},
+  {"code": "ja", "path": "/ja", "html": "ja", "match": ["ja"]},
+  {"code": "ko", "path": "/ko", "html": "ko", "match": ["ko"]},
+  {"code": "fr", "path": "/fr", "html": "fr", "match": ["fr"]},
+  {"code": "de", "path": "/de", "html": "de", "match": ["de"]},
+  {"code": "es", "path": "/es", "html": "es", "match": ["es"]},
+  {"code": "pt", "path": "/pt", "html": "pt-BR", "match": ["pt"]}
+]

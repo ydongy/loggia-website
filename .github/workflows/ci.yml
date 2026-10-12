@@ -1,0 +1,16 @@
+# Every PR must pass; the checks are defined once for ydongy in
+# ydongy/.github (handbook/types/website/code.md, "Checks").
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  ci:
+    uses: ydongy/.github/.github/workflows/site-ci.yml@main

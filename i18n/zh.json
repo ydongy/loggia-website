@@ -1,0 +1,497 @@
+{
+  "name": "简体中文",
+  "meta": {
+    "home_title": "Loggia：把 Mac 上的服务安全地放到互联网上",
+    "home_desc": "Loggia 把本地端口变成你自己 Cloudflare 账户下的 HTTPS 地址，并显示每个服务是否在线。",
+    "faq_title": "Loggia 常见问题",
+    "faq_desc": "关于 Loggia 的常见问题：系统要求、Cloudflare Token 权限、访问保护、代理软件、更新与卸载。",
+    "privacy_title": "Loggia 隐私政策",
+    "privacy_desc": "Loggia 收集什么（几乎什么都不收集）、连接哪些服务，以及你的权利。",
+    "changelog_title": "Loggia 更新日志",
+    "changelog_desc": "Loggia 每个版本的更新内容。",
+    "refund_title": "Loggia 退款政策",
+    "refund_desc": "购买 Loggia Pro 后 14 天内可申请全额退款，以及退款后授权码的变化。",
+    "terms_title": "Loggia 服务条款",
+    "terms_desc": "Loggia 的软件许可协议：免费版、Pro 授权码、激活、使用限制与责任。",
+    "support_title": "Loggia 支持",
+    "support_desc": "如何联系 Loggia 支持、邮件里写什么，以及怎么发送诊断信息。"
+  },
+  "nav": {
+    "download": "下载",
+    "pricing": "价格",
+    "faq": "常见问题",
+    "changelog": "更新日志",
+    "privacy": "隐私政策",
+    "copyright": "© 2026 ydongy. 保留所有权利。",
+    "skip": "跳到正文",
+    "language": "语言",
+    "product": "产品",
+    "support": "支持",
+    "legal": "法律",
+    "contact_h": "联系",
+    "official": "官方下载只在 <strong translate=\"no\">useloggia.com</strong>，其他来源的安装包可能被篡改过。",
+    "contact": "对 Loggia、购买或退款有疑问，请写信到 <a href=\"mailto:support@useloggia.com\" translate=\"no\">support@useloggia.com</a>。",
+    "refund": "退款政策",
+    "terms": "服务条款",
+    "contact_support": "联系支持"
+  },
+  "home": {
+    "h1": [
+      "把 Mac 上的服务，",
+      "安全地放到互联网上。"
+    ],
+    "lead": [
+      "Loggia 把本地端口变成你自己 Cloudflare 账户下的 HTTPS 地址，",
+      "并显示每个服务是否在线。"
+    ],
+    "download_cta": "下载 Mac 版",
+    "state": "在线",
+    "chain_label": "从本机经过 cloudflared 和 Cloudflare 到公网地址的链路，四段全部连通。",
+    "nodes": [
+      {
+        "name": "本机",
+        "detail": "localhost:5000"
+      },
+      {
+        "name": "cloudflared",
+        "detail": "运行中"
+      },
+      {
+        "name": "Cloudflare",
+        "detail": "4 条连接"
+      },
+      {
+        "name": "公网",
+        "detail": "nas.example.com"
+      }
+    ],
+    "lamps_h": "每个服务都有一盏灯。",
+    "lamps_lead": "灯的形状就能说明状态，不靠颜色也分得清。",
+    "lamps": [
+      {
+        "title": "在线",
+        "text": "公网地址可以打开。"
+      },
+      {
+        "title": "部分异常",
+        "text": "比如新的域名记录还没生效。"
+      },
+      {
+        "title": "不通",
+        "text": "链路上有一段断了，Loggia 会指出是哪一段。"
+      },
+      {
+        "title": "仅本机",
+        "text": "还没有公开，这不是故障。"
+      }
+    ],
+    "facts_h": "只用你自己的账户。",
+    "facts": [
+      {
+        "title": "中间没有第三方服务器",
+        "text": "Loggia 用你自己的 Cloudflare 账户，不经过任何第三方服务器。"
+      },
+      {
+        "title": "令牌只留在你的 Mac 上",
+        "text": "API 令牌保存在 Mac 的钥匙串里，只会发给 Cloudflare。"
+      },
+      {
+        "title": "App 没有统计，不用注册",
+        "text": "设置和服务列表只保存在你的 Mac 上。只有激活 Pro 时才会发送与你有关的内容：授权码和设备标签，发给 Dodo Payments。详见<a href=\"{{root}}/privacy\">隐私政策</a>。"
+      },
+      {
+        "title": "只让你列出的人打开",
+        "text": "为服务开启访问保护后，访客要用发到指定邮箱的一次性验证码登录。"
+      }
+    ],
+    "steps_h": "三步开始。",
+    "steps": [
+      {
+        "title": "粘贴 Cloudflare API 令牌",
+        "text": "点「在 Cloudflare 创建 Token」，会打开一个已经勾好权限的模板。"
+      },
+      {
+        "title": "让 Loggia 准备运行时",
+        "text": "它会下载 Cloudflare 的 cloudflared，并让它保持运行。"
+      },
+      {
+        "title": "添加服务并公开",
+        "text": "选一个本地端口，打开「公开到互联网」，再选一个域名。"
+      }
+    ],
+    "download_h": "下载 Loggia",
+    "download_lead": "下载的是免费版。Pro 一次买断，不是订阅。",
+    "status_default": "适用于 macOS&nbsp;26 或更高版本。",
+    "download_button": "下载",
+    "buy_button": "购买 Pro",
+    "noscript": "请启用 JavaScript 以查看最新版本。",
+    "purchase_note": "结账由 Dodo Payments 处理，授权码会通过电子邮件发送给你。",
+    "checksum_hint": "校验方法：对下载的文件运行 <code>shasum -a 256</code>，结果应与上面一致。",
+    "plan_feature": "功能",
+    "plan_free": "免费版",
+    "plan_pro": "Pro",
+    "plans": [
+      {
+        "label": "价格",
+        "free": "免费版",
+        "pro": "US$19，一次性买断（首发价）"
+      },
+      {
+        "label": "本机服务",
+        "free": "不限数量",
+        "pro": "不限数量"
+      },
+      {
+        "label": "公开到互联网的服务",
+        "free": "最多 2 个",
+        "pro": "不限数量"
+      },
+      {
+        "label": "访问保护（邮箱验证码）",
+        "free": "-",
+        "pro": "包含"
+      },
+      {
+        "label": "链路诊断与清理",
+        "free": "包含",
+        "pro": "包含"
+      }
+    ],
+    "not_included": "不包含",
+    "terms": "购买 Pro 后会得到一个授权码，在“设置 › 许可”里输入即可升级。一个授权码可用于 2 台 Mac，覆盖 1.x 的所有版本。14 天内退款见<a href=\"{{root}}/refund\">退款政策</a>。",
+    "install": "打开 dmg，把 Loggia 拖到「应用程序」，然后打开它，按引导完成设置。你需要一个 Cloudflare 账户，以及一个由 Cloudflare 托管的域名。还有疑问？看看<a href=\"{{root}}/faq\">常见问题</a>。",
+    "app_languages": "",
+    "carousel": {
+      "label": "截图",
+      "prev": "上一张",
+      "next": "下一张",
+      "slides": [
+        {
+          "title": "所有服务，一个窗口",
+          "text": "每个服务在不在线一目了然，点开就能用。",
+          "alt": "Loggia 主窗口：链路卡片显示在线，侧栏列出 5 个服务，其中 2 个已公开；右侧打开的是已公开的「NAS 面板」的详情。"
+        },
+        {
+          "title": "断了，告诉你断在哪",
+          "text": "链路分四段检查，标出断开的那一段，并给出修复的按钮。",
+          "alt": "链路详情，部分异常：Grafana 在这台 Mac 上没有响应。其余几段正常，说明里写着端口 3000 没有程序在监听，并提供「查看服务」按钮。"
+        },
+        {
+          "title": "一个开关就能公开",
+          "text": "打开「公开到互联网」，选一个域名，本地端口就有了 HTTPS 地址。",
+          "alt": "Jupyter 刚公开后的详情：「公开到互联网」已打开，jupyter.example.com 可以访问。"
+        },
+        {
+          "title": "用邮箱验证码保护它",
+          "text": "开启访问保护，列出允许访问的邮箱，访客要先验证邮箱才能打开。这是 Pro 的功能。",
+          "alt": "NAS 面板的访问保护：「访问前验证邮箱」已开启，列出了两个允许的邮箱，并设置了登录有效期。"
+        },
+        {
+          "title": "菜单栏随时看",
+          "text": "不用打开窗口，在菜单栏就能看到每个服务的状态。",
+          "alt": "菜单栏面板：链路在线，列出 5 个服务及其状态。"
+        }
+      ]
+    }
+  },
+  "download_js": {
+    "version": "版本 {v} · macOS {os} 或更高版本",
+    "version_no_os": "版本 {v}",
+    "button": "下载 Loggia {v}",
+    "error": "暂时无法下载，请稍后再试。"
+  },
+  "faq": {
+    "h1": "常见问题",
+    "lead": "没找到答案？App 会直接告诉你哪里出了问题、点哪个按钮能修好，先打开服务或链路详情看看。",
+    "groups": [
+      {
+        "id": "basics",
+        "h": "基本",
+        "items": [
+          {
+            "id": "free",
+            "q": "Loggia 免费吗？",
+            "a": "<p>免费版免费，最多可以公开 2 个服务到互联网，但不能新开访问保护。Pro 取消这些限制，一次买断。详见<a href=\"{{root}}/#pricing\">价格</a>。</p>"
+          },
+          {
+            "id": "requirements",
+            "q": "需要准备什么？",
+            "a": "<p>一台 macOS&nbsp;26 或更高版本的 Mac、一个 Cloudflare 账户，以及至少一个由 Cloudflare 托管的域名。</p>"
+          },
+          {
+            "id": "cloudflare-cost",
+            "q": "需要给 Cloudflare 付费吗？",
+            "a": "<p>公开服务用的是 Cloudflare Tunnel，它是免费的。访问保护需要账户开通 Zero Trust，免费套餐就够用。域名照常由注册商收费。</p>"
+          },
+          {
+            "id": "mac-on",
+            "q": "Mac 需要一直开着吗？",
+            "a": "<p>需要。服务一直运行在你的 Mac 上，Loggia 只是给它们一个公网地址。Mac 睡眠、关机或断网时，地址就访问不到。连接器会在登录时自动启动，Mac 恢复后服务也随之恢复。</p>"
+          },
+          {
+            "id": "traffic",
+            "q": "访问流量会经过你们的服务器吗？",
+            "a": "<p>不会。访客通过 Cloudflare 直接访问你 Mac 上的服务。Loggia 没有自己的服务器，也看不到你的流量。详见<a href=\"{{root}}/privacy\">隐私政策</a>。</p>"
+          }
+        ]
+      },
+      {
+        "id": "cloudflare",
+        "h": "Cloudflare 与 API 令牌",
+        "items": [
+          {
+            "id": "token-permissions",
+            "q": "API 令牌需要哪些权限？",
+            "a": "\n<p>在引导或「设置 › Cloudflare」里点 <b>在 Cloudflare 创建 Token</b>，会打开一个已经勾好权限的模板，直接确认即可。模板包含：</p>\n<table>\n<tr><td>Account › Cloudflare Tunnel › Edit</td><td>必需</td></tr>\n<tr><td>Zone › DNS › Edit</td><td>必需。Zone Resources 可以只选要用的域名。</td></tr>\n<tr><td>Account › Access: Apps and Policies › Edit</td><td>可选，用于访问保护</td></tr>\n<tr><td>Account › Access: Organizations, Identity Providers, and Groups › Edit</td><td>可选，让 Loggia 自动设置邮箱验证码登录</td></tr>\n</table>\n<p>如果想自己创建令牌，「设置 › Cloudflare」里逐项列出了权限，并提供 <b>复制权限清单</b>。令牌只保存在 Mac 的钥匙串里。</p>\n"
+          },
+          {
+            "id": "permission-delay",
+            "q": "刚在 Cloudflare 补了权限，Loggia 还是提示缺少权限。",
+            "a": "<p>Cloudflare 上的改动要一两分钟才生效。稍等片刻，再到「设置 › Cloudflare」点 <b>重新检查</b>。</p>"
+          },
+          {
+            "id": "access-protection",
+            "q": "为什么开不了访问保护？",
+            "a": "\n<ul>\n<li>访问保护是 Pro 功能。</li>\n<li>服务要先公开，才能开启访问保护。</li>\n<li>令牌需要带上面列出的两项 Access 权限。</li>\n<li>Cloudflare 账户需要开通 Zero Trust，免费套餐就够用。开通后到「设置 › Cloudflare」点 <b>重新检查</b>。</li>\n</ul>\n"
+          },
+          {
+            "id": "who-can-open",
+            "q": "开启访问保护后，谁能打开我的服务？",
+            "a": "<p>只有你列出的邮箱；添加 <code>@example.com</code> 则允许该域名下的所有邮箱。访客会通过邮件收到一次性验证码。登录默认有效 24 小时，可以调整。</p>"
+          },
+          {
+            "id": "existing-domain",
+            "q": "Loggia 会覆盖我正在使用的域名吗？",
+            "a": "<p>不会悄悄覆盖。如果域名已经指向别处，Loggia 会停下来，先征得你的同意再做改动。</p>"
+          }
+        ]
+      },
+      {
+        "id": "pro",
+        "h": "Pro 与许可",
+        "items": [
+          {
+            "id": "devices",
+            "q": "一个授权码能用在几台 Mac 上？",
+            "a": "<p>两台。想换到另一台 Mac，先在已激活的其中一台上，到「设置 › 许可」点 <b>取消激活</b>。</p>"
+          },
+          {
+            "id": "offline",
+            "q": "Pro 需要联网吗？",
+            "a": "<p>激活时需要。之后 Loggia 每天验证一次授权；连不上授权服务器时，Pro 从上次验证成功起还能继续用 30 天，Mac 联网后会自动恢复。</p>"
+          },
+          {
+            "id": "updates-included",
+            "q": "授权码覆盖哪些版本？",
+            "a": "<p>1.x 的全部版本。更新本身对免费版和 Pro 都是免费的。</p>"
+          },
+          {
+            "id": "refund",
+            "q": "可以退款吗？",
+            "a": "<p>可以，购买后 14 天内。<a href=\"{{root}}/refund\">退款政策</a>里写明了如何申请，以及授权码会怎样。</p>"
+          },
+          {
+            "id": "after-refund",
+            "q": "退款后，或者授权失效后会怎样？",
+            "a": "<p>Loggia 回到免费版，但不会下线任何东西：已经公开的服务继续运行。免费版只管理列表里最早公开的 2 个服务；其余的继续运行，但 Loggia 不再检查它们，并显示为 <b>未管理</b>，你仍然可以停止公开。已经开启的访问保护继续生效，可以关掉，但不能再修改。重新升级到 Pro 后一切恢复。</p>"
+          }
+        ]
+      },
+      {
+        "id": "troubleshooting",
+        "h": "故障排查",
+        "items": [
+          {
+            "id": "service-down",
+            "q": "服务显示不在线，从哪里开始查？",
+            "a": "<p>打开这个服务。Loggia 会显示链路的哪一段断了（本地服务、域名记录、Mac 上的连接器，还是 Cloudflare）、原因是什么，以及点哪个按钮能修好。新的域名记录可能要几分钟才生效。</p>"
+          },
+          {
+            "id": "proxy",
+            "q": "Loggia 提示有代理软件拦截了连接。",
+            "a": "<p>代理软件在增强模式或 TUN 模式下开着 Fake-IP 时，会给 <code>argotunnel.com</code> 返回假地址，cloudflared 到 Cloudflare 最多只能保持两条连接，甚至连不上。cloudflared 连不上 Cloudflare 时，Loggia 会检查这一点，确认之后才提到代理软件。在代理软件里：</p>\n<ol>\n<li>把 <code>argotunnel.com</code> 和 <code>cftunnel.com</code> 设为直连。</li>\n<li>把 <code>+.argotunnel.com</code> 加入 Fake-IP 过滤（<code>fake-ip-filter</code>），让它解析到 Cloudflare 的真实地址。Fake-IP 模式下只设直连还不够。</li>\n<li>点 Loggia 显示的 <b>重新连接</b>、<b>重试</b> 或 <b>重启</b>。</li>\n</ol>\n<p>公开服务的状态是从外网检查的，不受代理软件影响。如果刚公开的域名在别处能打开、在这台 Mac 上打不开，可能是代理软件把它记成了不存在，最长半小时：把这个域名也加入 Fake-IP 过滤，或者清一次代理软件的 DNS 缓存。</p>"
+          },
+          {
+            "id": "connector",
+            "q": "在哪里查看连接器的状态？",
+            "a": "<p>「设置 › 连接器」会显示 cloudflared 是否已安装、是否在运行、版本、上次退出码和日志。如果一直出错，可以在那里导出诊断信息。</p>"
+          }
+        ]
+      },
+      {
+        "id": "updates",
+        "h": "更新与卸载",
+        "items": [
+          {
+            "id": "update",
+            "q": "怎么更新 Loggia？",
+            "a": "<p>Loggia 每天自动检查一次新版本。有新版本时，会显示更新内容，并可以帮你下载、安装和重新打开。想马上检查，在「设置 › 关于」里点 <b>检查更新</b>；不想每天自动检查，在同一处关掉 <b>自动检查更新</b>。设置和服务都会保留，免费版和 Pro 都可以免费更新。每个版本改了什么，见<a href=\"{{root}}/changelog\">更新日志</a>。</p>"
+          },
+          {
+            "id": "uninstall",
+            "q": "怎么彻底卸载 Loggia？",
+            "a": "\n<ol>\n<li>在「设置 › Cloudflare」里点 <b>彻底移除…</b>，先清掉 Loggia 在 Cloudflare 上的域名记录、路由和访问保护。</li>\n<li>退出 Loggia，把它从「应用程序」移到废纸篓。</li>\n<li>在终端运行 <code>launchctl bootout gui/$(id -u)/com.useloggia.app.cloudflared</code>，然后删除 <code>~/Library/Application Support/Loggia</code>、<code>~/Library/Logs/Loggia</code> 和 <code>~/Library/LaunchAgents/com.useloggia.app.cloudflared.plist</code>。</li>\n<li>在「钥匙串访问」里删除「Loggia」条目。</li>\n</ol>\n"
+          }
+        ]
+      }
+    ]
+  },
+  "privacy": {
+    "h1": "隐私政策",
+    "updated": "最后更新 · 2026 年 10 月",
+    "note": "本页译文仅供参考；如与英文版本不一致，以英文版本为准。",
+    "lead": "本政策适用于 Loggia 应用和本网站：收集什么、发送给谁，以及你有哪些选择。",
+    "sections": [
+      {
+        "h": "我们收集什么",
+        "body": "<p>激活、验证或取消激活 Pro 时，Loggia 会通过 HTTPS 向 Dodo Payments 发送授权码和一个设备标签（你的 Mac 名称加一段由硬件标识算出的短码）。除此之外不发送其他内容。</p>\n<p>Loggia 没有账号、没有统计分析，也没有自己的服务器。</p>"
+      },
+      {
+        "h": "我们不收集什么",
+        "body": "<p>Loggia 不会收集或接收你公开的服务、你的域名、你的 Cloudflare API 令牌、访问你服务的流量，也不会收集你如何使用这个应用。一切都在你的 Mac 或你自己的 Cloudflare 账号里完成。访客通过 Cloudflare 直接访问你 Mac 上的服务。</p>\n<p>日志只保存在你的 Mac 上。导出诊断信息会生成一个由你自己发送的文件，其中的令牌、授权码和你的用户目录已被去除。</p>"
+      },
+      {
+        "h": "第三方服务",
+        "body": "<ul>\n<li><b>Cloudflare</b>：Loggia 用你的令牌调用 Cloudflare API，在你的账号里管理通道、域名记录和访问保护。你的账号适用 Cloudflare 自己的隐私政策。</li>\n<li><b>GitHub</b>：用于下载 cloudflared，并检查它是否有新版本。</li>\n<li><b>dl.useloggia.com</b>：用于检查 Loggia 是否有新版本，每天一次，除非你关闭自动检查。请求里带有应用名称和版本号、更新框架的版本号以及你的 IP 地址，不发送系统配置信息。</li>\n<li><b>公共 DNS</b>：用于检查你的域名是否已经生效。</li>\n<li><b>Dodo Payments</b>：我们的支付服务商和销售方（Merchant of Record）。结账时 Dodo 按其自身隐私政策收集你的姓名、邮箱和账单信息，并负责发票、税费和退款。Loggia 不会收到你的支付信息。</li>\n<li><b>本网站</b>：静态网站，不使用 Cookie。网站和下载文件由 Cloudflare 提供，Cloudflare 会保留标准的访问日志。访问量由 Cloudflare Web Analytics 统计，它衡量页面浏览量和页面加载时间。据 Cloudflare 说明，它不使用 Cookie 或本地存储，不对访客做指纹识别，也不收集个人数据。应用本身不使用它。</li>\n</ul>"
+      },
+      {
+        "h": "数据存储",
+        "body": "<ul>\n<li>你的 Cloudflare API 令牌和 Pro 授权码保存在这台 Mac 的钥匙串里。</li>\n<li>设置和服务列表保存在 <code>~/Library/Application Support/Loggia</code>，连接组件的日志在 <code>~/Library/Logs/Loggia</code>。</li>\n<li>开发者可以在 Dodo 后台看到你的购买记录（姓名、邮箱、付款编号），仅用于提供支持和处理退款。</li>\n</ul>"
+      },
+      {
+        "h": "你的权利和控制",
+        "body": "<p>你可以随时在“设置 › 许可”里取消激活授权码。如需了解我们持有你的哪些信息，或要求更正、删除，请发邮件到 <a href=\"mailto:support@useloggia.com\" translate=\"no\">support@useloggia.com</a>，我们会在 30 天内回复。</p>\n<p>如果你位于欧盟或欧洲经济区，还享有 GDPR 赋予的权利，包括数据可携权和向当地数据保护机构投诉的权利。</p>"
+      },
+      {
+        "h": "变更",
+        "body": "<p>本政策如有变更，上方的日期会随之更新。</p>"
+      }
+    ]
+  },
+  "changelog": {
+    "h1": "更新日志",
+    "empty": "还没有发布任何版本。",
+    "groups": {
+      "added": "新增",
+      "changed": "变更",
+      "fixed": "修复",
+      "removed": "移除"
+    }
+  },
+  "terms": {
+    "h1": "服务条款",
+    "updated": "最后更新 · 2026 年 10 月",
+    "note": "本页译文仅供参考；如与英文版本不一致，以英文版本为准。",
+    "sections": [
+      {
+        "h": "许可",
+        "body": "<p>本服务条款同时也是 Loggia 的软件许可协议。Loggia 有免费版和 Pro。免费版可以免费使用；Pro 需要购买授权码。你获得一份非独占、不可转让的许可，可以在你拥有或控制的 Mac 上安装并使用 Loggia 的官方发布版本。软件是授权使用，不是出售。</p>"
+      },
+      {
+        "h": "免费版与 Pro",
+        "body": "<p>免费版最多公开 2 个服务，且不能开启新的访问保护。Pro 没有这些限制。一个 Pro 授权码覆盖 1.x 的所有版本。</p>"
+      },
+      {
+        "h": "授权码",
+        "body": "<p>一个授权码可以同时在你自己的最多 2 台 Mac 上激活。要换到另一台 Mac，请先在其中一台的“设置 › 许可”里取消激活。授权码仅供购买者本人使用，不得转让、出租、出借、共享或转售。如果你丢失了授权码，请发邮件到 <a href=\"mailto:support@useloggia.com\" translate=\"no\">support@useloggia.com</a>，我们确认购买后会重新发给你。</p>"
+      },
+      {
+        "h": "激活与验证",
+        "body": "<p>激活、验证和取消激活时，Loggia 只会把授权码和设备标签（电脑名称加一段由硬件标识算出的短码）发送给 Dodo Payments。验证联网失败时，Pro 最多再保持 30 天。</p>"
+      },
+      {
+        "h": "你的数据和凭据",
+        "body": "<p>Loggia 用你提供的令牌，在你自己的 Cloudflare 账号里设置通道、域名记录和访问保护。你对该账号、你的域名，以及你从互联网上开放的服务负责，包括遵守 Cloudflare 的条款和适用的法律。Loggia 不托管你的服务，也看不到你的流量。你的 Cloudflare API 令牌和授权码保存在 Mac 的钥匙串里，令牌只用于调用 Cloudflare。Loggia 不会把你的 Cloudflare 令牌、你的服务或使用数据发送给我们。</p>"
+      },
+      {
+        "h": "使用限制",
+        "body": "<p>未经版权所有者书面许可，不得：复制、修改、反向工程、反编译或反汇编本软件（法律明确允许的除外）；再分发、出租、出借、转授权或出售本软件；绕过或破坏授权验证；移除版权声明。</p>"
+      },
+      {
+        "h": "更新",
+        "body": "<p>Loggia 每天检查一次新版本，你主动要求时也会检查，方式是从 dl.useloggia.com 读取更新源；请求里带有应用名称和版本号、更新框架的版本号以及你的 IP 地址，不带系统配置信息。新版本只有在你确认后才会安装，而且只有 Apple 的代码签名和更新自身的签名都验证通过，才会安装。你可以在“设置”里关闭每日检查。免费版和 Pro 都可以免费更新。更新适用本条款，除非更新附带自己的条款。</p>"
+      },
+      {
+        "h": "第三方组件",
+        "body": "<p>Loggia 在运行时下载并使用 Cloudflare, Inc. 的 cloudflared，并内置 Sparkle 用于更新。它们分别遵循各自的许可（Apache License 2.0 和 MIT），不适用本协议。清单可在应用的“设置 › 关于”里查看。</p>"
+      },
+      {
+        "h": "购买与退款",
+        "body": "<p>购买由 Dodo Payments 作为销售方（Merchant of Record）处理，税费由其按所在地区计算，付款适用 Dodo 自己的条款。退款适用<a href=\"{{root}}/refund\">退款政策</a>。这不影响法律赋予消费者的权利。</p>"
+      },
+      {
+        "h": "知识产权",
+        "body": "<p>Loggia 的名称、图标、软件及其版权归 ydongy 所有。Copyright (c) 2026 ydongy，保留所有权利。</p>"
+      },
+      {
+        "h": "终止",
+        "body": "<p>违反本条款时，授权自动终止。授权码失效（例如退款后），Loggia 回到免费版。</p>"
+      },
+      {
+        "h": "免责声明",
+        "body": "<p>本软件按“现状”提供，不附带任何明示或暗示的担保，包括适销性、特定用途适用性和不侵权。</p>"
+      },
+      {
+        "h": "责任限制",
+        "body": "<p>在法律允许的最大范围内，版权所有者不对因使用本软件产生的任何间接、附带或后果性损害负责，总责任以你为授权码支付的金额为限。</p>"
+      },
+      {
+        "h": "变更",
+        "body": "<p>本条款可能更新，上方的日期表示最新版本。更新后你继续使用 Loggia，即表示接受更新。</p>"
+      }
+    ]
+  },
+  "refund": {
+    "h1": "退款政策",
+    "updated": "最后更新 · 2026 年 10 月",
+    "note": "本页译文仅供参考；如与英文版本不一致，以英文版本为准。",
+    "sections": [
+      {
+        "h": "14 天退款",
+        "body": "<p>如果 Loggia Pro 不适合你，可以在购买后 14 天内申请全额退款，不需要说明理由。</p>"
+      },
+      {
+        "h": "如何申请",
+        "body": "<p>请用购买时的邮箱发邮件到 <a href=\"mailto:support@useloggia.com\" translate=\"no\">support@useloggia.com</a>，有收据上的付款编号的话一并附上。退款由 Dodo Payments 原路退回，银行通常需要 3 到 5 个工作日到账。</p>"
+      },
+      {
+        "h": "授权码会怎样",
+        "body": "<p>退款完成后，授权码失效，Loggia 回到免费版。不会下线任何东西：已公开的服务继续运行。免费版如何处理它们，见<a href=\"{{root}}/faq#after-refund\">常见问题</a>。你可以随时重新购买 Pro。</p>"
+      },
+      {
+        "h": "取消",
+        "body": "<p>Pro 是一次性购买，不是订阅，所以没有需要取消的东西，也不会自动续费。</p>"
+      },
+      {
+        "h": "你的法定权利",
+        "body": "<p>本政策不影响法律赋予消费者的权利。</p>"
+      }
+    ]
+  },
+  "support": {
+    "h1": "支持",
+    "lead": "遇到问题，或者有想法？直接写信给我们，每一封都会看。",
+    "sections": [
+      {
+        "h": "发邮件给我们",
+        "body": "<p>写信到 <a href=\"mailto:support@useloggia.com\" translate=\"no\">support@useloggia.com</a>。在 Loggia 里选「帮助 › 发送反馈…」，会打开一封新邮件，已经填好 Loggia 和 macOS 的版本。</p>"
+      },
+      {
+        "h": "请告诉我们",
+        "body": "<ul><li>你想做什么。</li><li>实际发生了什么，以及看到的提示。</li><li>Loggia 和 macOS 的版本（用了「发送反馈」就不用写）。</li></ul>"
+      },
+      {
+        "h": "发送诊断信息",
+        "body": "<p>如果一直出错，请选「帮助 › 导出诊断信息…」（或「设置 › 连接器 › 导出…」）。Loggia 会保存一个 zip 文件并在访达里显示，把它附在邮件里即可。令牌和许可证密钥会被去掉，主文件夹路径会缩写成 ~。Loggia 不会自己发送这个文件。</p>"
+      },
+      {
+        "h": "写信之前",
+        "body": "<p><a href=\"{{root}}/faq\">常见问题</a>里有大部分答案，包括<a href=\"{{root}}/faq#service-down\">服务打不开时怎么办</a>。要申请退款，请看<a href=\"{{root}}/refund\">退款政策</a>。</p>"
+      },
+      {
+        "h": "安全问题",
+        "body": "<p>要报告安全问题，请写信到同一个地址，主题写上“Security”，并且不要公开发布。</p>"
+      }
+    ]
+  }
+}

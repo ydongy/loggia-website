@@ -1,0 +1,495 @@
+{
+  "name": "Español",
+  "meta": {
+    "home_title": "Loggia: publica en internet los servicios de tu Mac, de forma segura",
+    "home_desc": "Loggia convierte un puerto local en una dirección HTTPS en tu propia cuenta de Cloudflare y muestra si cada servicio está activo.",
+    "faq_title": "Preguntas frecuentes de Loggia",
+    "faq_desc": "Respuestas a preguntas comunes sobre Loggia: requisitos, permisos del token de Cloudflare, protección de acceso, proxies, actualizaciones y desinstalación.",
+    "privacy_title": "Política de privacidad de Loggia",
+    "privacy_desc": "Qué recopila Loggia (casi nada), con qué se conecta y cuáles son tus derechos.",
+    "changelog_title": "Historial de cambios de Loggia",
+    "changelog_desc": "Novedades de cada versión de Loggia.",
+    "refund_title": "Política de reembolso de Loggia",
+    "refund_desc": "Reembolso completo en los 14 días siguientes a la compra de Loggia Pro y qué pasa con tu licencia.",
+    "terms_title": "Términos del servicio de Loggia",
+    "terms_desc": "El acuerdo de licencia de Loggia: versión gratuita, claves de licencia Pro, activación, restricciones y responsabilidad.",
+    "support_title": "Soporte de Loggia",
+    "support_desc": "Cómo contactar con el soporte de Loggia, qué incluir en tu mensaje y cómo enviar un diagnóstico."
+  },
+  "nav": {
+    "download": "Descargar",
+    "pricing": "Precios",
+    "faq": "Preguntas frecuentes",
+    "changelog": "Historial de cambios",
+    "privacy": "Política de privacidad",
+    "copyright": "© 2026 ydongy. Todos los derechos reservados.",
+    "skip": "Ir al contenido",
+    "language": "Idioma",
+    "product": "Producto",
+    "support": "Ayuda",
+    "legal": "Legal",
+    "contact_h": "Contacto",
+    "official": "Las descargas oficiales están solo en <strong translate=\"no\">useloggia.com</strong>. Un instalador de otro sitio podría estar alterado.",
+    "contact": "¿Preguntas sobre Loggia, una compra o un reembolso? Escribe a <a href=\"mailto:support@useloggia.com\" translate=\"no\">support@useloggia.com</a>.",
+    "refund": "Política de reembolso",
+    "terms": "Términos del servicio",
+    "contact_support": "Contactar con soporte"
+  },
+  "home": {
+    "h1": [
+      "Publica en internet los servicios de tu Mac, de forma segura."
+    ],
+    "lead": [
+      "Loggia convierte un puerto local en una dirección HTTPS en tu propia cuenta de Cloudflare y muestra si cada servicio está activo."
+    ],
+    "download_cta": "Descargar para Mac",
+    "state": "En línea",
+    "chain_label": "La conexión desde este Mac a la dirección pública, pasando por cloudflared y Cloudflare, con los cuatro tramos funcionando.",
+    "nodes": [
+      {
+        "name": "Este Mac",
+        "detail": "localhost:5000"
+      },
+      {
+        "name": "cloudflared",
+        "detail": "En marcha"
+      },
+      {
+        "name": "Cloudflare",
+        "detail": "4 conexiones"
+      },
+      {
+        "name": "Pública",
+        "detail": "nas.example.com"
+      }
+    ],
+    "lamps_h": "Cada servicio tiene un indicador.",
+    "lamps_lead": "La forma indica el estado, así que puedes leerlo sin depender del color.",
+    "lamps": [
+      {
+        "title": "En línea",
+        "text": "Accesible en su dirección pública."
+      },
+      {
+        "title": "Funciona en parte",
+        "text": "Por ejemplo, un registro de dominio nuevo todavía no ha surtido efecto."
+      },
+      {
+        "title": "Inaccesible",
+        "text": "Una parte de la conexión no funciona. Loggia te muestra cuál."
+      },
+      {
+        "title": "Solo en este Mac",
+        "text": "No está publicado. No es un fallo."
+      }
+    ],
+    "facts_h": "Solo tu propia cuenta.",
+    "facts": [
+      {
+        "title": "Sin servidores intermedios",
+        "text": "Loggia funciona con tu cuenta de Cloudflare, sin servidores de terceros de por medio."
+      },
+      {
+        "title": "Tu token no sale de tu Mac",
+        "text": "El token de API se guarda en el llavero de tu Mac y solo se envía a Cloudflare."
+      },
+      {
+        "title": "La app no recopila nada",
+        "text": "Los ajustes y la lista de servicios se quedan en tu Mac. Solo activar Pro envía algo sobre ti: una clave de licencia y una etiqueta del dispositivo, a Dodo Payments. Consulta la <a href=\"{{root}}/privacy\">Política de privacidad</a>."
+      },
+      {
+        "title": "Solo las personas que indiques",
+        "text": "Activa la protección de acceso en un servicio y los visitantes inician sesión con un código de un solo uso enviado a un correo que hayas autorizado."
+      }
+    ],
+    "steps_h": "Se configura en tres pasos.",
+    "steps": [
+      {
+        "title": "Pega un token de API de Cloudflare",
+        "text": "“Crear un token en Cloudflare” abre una plantilla con los permisos ya seleccionados."
+      },
+      {
+        "title": "Deja que Loggia prepare el entorno",
+        "text": "Descarga cloudflared, de Cloudflare, y lo mantiene en marcha por ti."
+      },
+      {
+        "title": "Añade un servicio y publícalo",
+        "text": "Elige un puerto local, activa “Publicar en internet” y elige un dominio."
+      }
+    ],
+    "download_h": "Descargar Loggia",
+    "download_lead": "La descarga es la versión gratuita. Pro es un pago único, no una suscripción.",
+    "status_default": "Para macOS&nbsp;26 o posterior.",
+    "download_button": "Descargar",
+    "buy_button": "Comprar Pro",
+    "noscript": "Activa JavaScript para ver la última versión.",
+    "purchase_note": "El pago lo gestiona Dodo Payments; tu clave de licencia llega por correo electrónico.",
+    "checksum_hint": "Para verificarlo, compáralo con el resultado de <code>shasum -a 256</code> sobre el archivo descargado.",
+    "plan_feature": "Función",
+    "plan_free": "Gratis",
+    "plan_pro": "Pro",
+    "plans": [
+      {
+        "label": "Precio",
+        "free": "Gratis",
+        "pro": "19 US$, pago único (precio de lanzamiento)"
+      },
+      {
+        "label": "Servicios en este Mac",
+        "free": "Ilimitados",
+        "pro": "Ilimitados"
+      },
+      {
+        "label": "Servicios publicados en internet",
+        "free": "Hasta 2",
+        "pro": "Ilimitados"
+      },
+      {
+        "label": "Protección de acceso con códigos por correo",
+        "free": "-",
+        "pro": "Incluida"
+      },
+      {
+        "label": "Diagnóstico y limpieza de la conexión",
+        "free": "Incluido",
+        "pro": "Incluido"
+      }
+    ],
+    "not_included": "No incluido",
+    "terms": "Al comprar Pro recibes una clave de licencia; introdúcela en Ajustes › Licencia para actualizar. Una licencia sirve para 2 Mac y cubre todas las versiones 1.x. Para los reembolsos en los 14 días siguientes a la compra, consulta la <a href=\"{{root}}/refund\">Política de reembolso</a>.",
+    "install": "Abre el dmg y arrastra Loggia a Aplicaciones, luego ábrelo y sigue la configuración. Necesitas una cuenta de Cloudflare y un dominio gestionado por Cloudflare. ¿Tienes dudas? Lee las <a href=\"{{root}}/faq\">preguntas frecuentes</a>.",
+    "app_languages": "",
+    "carousel": {
+      "label": "Capturas",
+      "prev": "Anterior",
+      "next": "Siguiente",
+      "slides": [
+        {
+          "title": "Todos tus servicios en una ventana",
+          "text": "Mira si cada servicio funciona y ábrelo ahí mismo.",
+          "alt": "La ventana de Loggia: la tarjeta de conexión muestra En línea, la barra lateral lista cinco servicios, dos de ellos publicados, y está abierto el detalle del Panel NAS publicado."
+        },
+        {
+          "title": "Cuando algo falla, te dice dónde",
+          "text": "La conexión se comprueba en cuatro tramos. El roto queda marcado, con el botón que lo arregla.",
+          "alt": "Detalle de la conexión, funciona en parte: Grafana no responde en este Mac. Los demás tramos están bien, y la explicación dice que nada escucha en el puerto 3000, con un botón Ver servicio."
+        },
+        {
+          "title": "Publica con un interruptor",
+          "text": "Activa «Publicar en internet» y elige un dominio. El puerto local obtiene una dirección HTTPS.",
+          "alt": "Detalle de Jupyter justo después de publicarlo: «Publicar en internet» está activado y jupyter.example.com es accesible."
+        },
+        {
+          "title": "Protégelo con un código por correo",
+          "text": "Activa la protección de acceso y indica quién puede abrir la dirección. Los visitantes confirman primero su correo. Forma parte de Pro.",
+          "alt": "Protección de acceso de Panel NAS: «Verificar el correo antes de acceder» está activado, hay dos correos permitidos y se ha fijado la validez de la sesión."
+        },
+        {
+          "title": "Siempre en la barra de menús",
+          "text": "Mira el estado de cada servicio sin abrir la ventana.",
+          "alt": "El panel de la barra de menús: la conexión está en línea y se listan cinco servicios con su estado."
+        }
+      ]
+    }
+  },
+  "download_js": {
+    "version": "Versión {v} · macOS {os} o posterior",
+    "version_no_os": "Versión {v}",
+    "button": "Descargar Loggia {v}",
+    "error": "La descarga no está disponible en este momento. Vuelve a intentarlo más tarde."
+  },
+  "faq": {
+    "h1": "Preguntas frecuentes",
+    "lead": "¿No encuentras tu respuesta? La propia app te dice qué falla y qué botón lo arregla. Abre primero los detalles del servicio o de la conexión.",
+    "groups": [
+      {
+        "id": "basics",
+        "h": "Lo básico",
+        "items": [
+          {
+            "id": "free",
+            "q": "¿Loggia es gratis?",
+            "a": "<p>La versión gratuita sí. Puede publicar hasta 2 servicios en internet y no puede activar nuevas protecciones de acceso. Pro elimina estos límites, con un pago único. Consulta <a href=\"{{root}}/#pricing\">Precios</a>.</p>"
+          },
+          {
+            "id": "requirements",
+            "q": "¿Qué necesito?",
+            "a": "<p>Un Mac con macOS&nbsp;26 o posterior, una cuenta de Cloudflare y al menos un dominio gestionado por Cloudflare.</p>"
+          },
+          {
+            "id": "cloudflare-cost",
+            "q": "¿Tengo que pagar a Cloudflare?",
+            "a": "<p>La publicación usa Cloudflare Tunnel, que es gratis. La protección de acceso necesita Zero Trust configurado en tu cuenta, y el plan gratuito es suficiente. Tu dominio lo factura su registrador, como siempre.</p>"
+          },
+          {
+            "id": "mac-on",
+            "q": "¿Mi Mac tiene que estar encendido?",
+            "a": "<p>Sí. Tus servicios siguen funcionando en tu Mac; Loggia solo les da una dirección pública. Mientras el Mac está en reposo, apagado o sin conexión, no se puede acceder a la dirección. El conector se inicia al iniciar sesión, así que los servicios vuelven en cuanto vuelve tu Mac.</p>"
+          },
+          {
+            "id": "traffic",
+            "q": "¿Mi tráfico pasa por servidores de Loggia?",
+            "a": "<p>No. Los visitantes llegan a tus servicios a través de Cloudflare, directamente a tu Mac. Loggia no tiene servidores propios y no ve tu tráfico. Consulta la <a href=\"{{root}}/privacy\">Política de privacidad</a>.</p>"
+          }
+        ]
+      },
+      {
+        "id": "cloudflare",
+        "h": "Cloudflare y el token de API",
+        "items": [
+          {
+            "id": "token-permissions",
+            "q": "¿Qué permisos necesita el token de API?",
+            "a": "\n<p>En la configuración inicial o en Ajustes › Cloudflare, haz clic en <b>Crear un token en Cloudflare</b>. Se abre una plantilla con los permisos ya seleccionados, así que solo tienes que confirmarla. La plantilla incluye:</p>\n<table>\n<tr><td>Account › Cloudflare Tunnel › Edit</td><td>Obligatorio</td></tr>\n<tr><td>Zone › DNS › Edit</td><td>Obligatorio. En Zone Resources puedes limitarlo a los dominios que uses.</td></tr>\n<tr><td>Account › Access: Apps and Policies › Edit</td><td>Opcional, para la protección de acceso</td></tr>\n<tr><td>Account › Access: Organizations, Identity Providers, and Groups › Edit</td><td>Opcional, permite que Loggia configure por ti el inicio de sesión con código por correo</td></tr>\n</table>\n<p>Ajustes › Cloudflare muestra cada permiso y tiene <b>Copiar lista de permisos</b> si prefieres crear el token tú mismo. El token se guarda solo en el llavero de tu Mac.</p>\n"
+          },
+          {
+            "id": "permission-delay",
+            "q": "Acabo de corregir los permisos del token, pero Loggia sigue diciendo que faltan.",
+            "a": "<p>Los cambios en Cloudflare tardan uno o dos minutos en surtir efecto. Espera un momento y haz clic en <b>Volver a comprobar</b> en Ajustes › Cloudflare.</p>"
+          },
+          {
+            "id": "access-protection",
+            "q": "¿Por qué no puedo activar la protección de acceso?",
+            "a": "\n<ul>\n<li>La protección de acceso es una función de Pro.</li>\n<li>Primero hay que publicar el servicio.</li>\n<li>El token necesita los dos permisos de Access indicados arriba.</li>\n<li>Tu cuenta de Cloudflare necesita tener Zero Trust configurado. El plan gratuito es suficiente. Cuando esté configurado, haz clic en <b>Volver a comprobar</b> en Ajustes › Cloudflare.</li>\n</ul>\n"
+          },
+          {
+            "id": "who-can-open",
+            "q": "Con la protección de acceso activada, ¿quién puede abrir mi servicio?",
+            "a": "<p>Solo las direcciones de correo que indiques, o cualquiera de un dominio si añades <code>@example.com</code>. Los visitantes reciben por correo un código de un solo uso. Por defecto, una sesión dura 24 horas, y puedes cambiarlo.</p>"
+          },
+          {
+            "id": "existing-domain",
+            "q": "¿Loggia sobrescribirá un dominio que ya uso?",
+            "a": "<p>No sin avisar. Si el dominio ya apunta a otro sitio, Loggia se detiene y te pregunta antes de cambiar nada.</p>"
+          }
+        ]
+      },
+      {
+        "id": "pro",
+        "h": "Pro y licencias",
+        "items": [
+          {
+            "id": "devices",
+            "q": "¿Cuántos Mac pueden usar una licencia?",
+            "a": "<p>Dos. Para usarla en otro Mac, primero haz clic en <b>Desactivar</b> en Ajustes › Licencia en uno de los Mac que la tienen.</p>"
+          },
+          {
+            "id": "offline",
+            "q": "¿Pro necesita conexión a internet?",
+            "a": "<p>Para activarla, sí. Después, Loggia comprueba la licencia una vez al día. Si no puede contactar con el servidor de licencias, Pro sigue funcionando durante 30 días desde la última comprobación correcta, y vuelve por sí sola cuando el Mac tiene conexión de nuevo.</p>"
+          },
+          {
+            "id": "updates-included",
+            "q": "¿Qué versiones cubre una licencia?",
+            "a": "<p>Todas las versiones 1.x. Las actualizaciones son gratuitas en ambos planes.</p>"
+          },
+          {
+            "id": "refund",
+            "q": "¿Puedo pedir un reembolso?",
+            "a": "<p>Sí, en los 14 días siguientes a la compra. La <a href=\"{{root}}/refund\">Política de reembolso</a> explica cómo pedirlo y qué pasa con tu licencia.</p>"
+          },
+          {
+            "id": "after-refund",
+            "q": "¿Qué pasa tras un reembolso o si una licencia deja de ser válida?",
+            "a": "<p>Loggia vuelve a la versión gratuita y no se desconecta nada: los servicios que publicaste siguen funcionando. La versión gratuita solo gestiona los 2 primeros servicios publicados de tu lista. Los demás siguen funcionando, pero Loggia deja de comprobarlos y los muestra como <b>No gestionado</b>; todavía puedes dejar de publicarlos. La protección de acceso que ya está activa sigue funcionando; puedes desactivarla, pero no cambiarla. Si vuelves a pasar a Pro, todo se restablece.</p>"
+          }
+        ]
+      },
+      {
+        "id": "troubleshooting",
+        "h": "Solución de problemas",
+        "items": [
+          {
+            "id": "service-down",
+            "q": "Un servicio aparece como caído. ¿Por dónde empiezo?",
+            "a": "<p>Abre el servicio. Loggia muestra qué parte de la conexión está rota (tu servicio local, el registro de dominio, el conector en tu Mac o Cloudflare), por qué, y el botón que lo arregla. Un registro de dominio nuevo puede tardar unos minutos en surtir efecto.</p>"
+          },
+          {
+            "id": "proxy",
+            "q": "Loggia dice que una app de proxy está interceptando la conexión.",
+            "a": "<p>En modo mejorado o TUN con fake-IP, una app de proxy responde a <code>argotunnel.com</code> con direcciones falsas, así que cloudflared mantiene como mucho dos conexiones con Cloudflare, o ninguna. Cuando cloudflared no puede conectar con Cloudflare, Loggia lo comprueba y solo entonces menciona una app de proxy. En la app de proxy:</p>\n<ol>\n<li>Haz que <code>argotunnel.com</code> y <code>cftunnel.com</code> vayan en conexión directa.</li>\n<li>Añade <code>+.argotunnel.com</code> al filtro de fake-IP (<code>fake-ip-filter</code>), para que se resuelva a las direcciones reales de Cloudflare. En modo fake-IP no basta con una regla directa.</li>\n<li>Haz clic en <b>Volver a conectar</b>, <b>Reintentar</b> o <b>Reiniciar</b>, según lo que muestre Loggia.</li>\n</ol>\n<p>El estado de tus servicios públicos se comprueba desde internet y no depende de la app de proxy. Si un dominio que acabas de publicar se abre en otros sitios pero no en este Mac, puede que la app de proxy lo recuerde como inexistente hasta media hora: añade también el dominio al filtro de fake-IP o vacía la caché DNS de la app de proxy.</p>"
+          },
+          {
+            "id": "connector",
+            "q": "¿Dónde puedo ver qué está haciendo el conector?",
+            "a": "<p>Ajustes › Conector muestra si cloudflared está instalado y en marcha, su versión, su último código de salida y su registro. Si algo sigue fallando, puedes exportar un diagnóstico desde ahí.</p>"
+          }
+        ]
+      },
+      {
+        "id": "updates",
+        "h": "Actualizaciones y desinstalación",
+        "items": [
+          {
+            "id": "update",
+            "q": "¿Cómo actualizo Loggia?",
+            "a": "<p>Loggia busca una versión nueva una vez al día. Cuando la hay, te muestra qué cambió y puede descargarla, instalarla y reiniciarse por ti. Para buscarla en el momento, haz clic en <b>Buscar actualizaciones</b> en Ajustes › Acerca de; para detener la búsqueda diaria, desactiva ahí <b>Buscar actualizaciones automáticamente</b>. Tu configuración y tus servicios se conservan, y las actualizaciones son gratuitas en ambos planes. El <a href=\"{{root}}/changelog\">historial de cambios</a> indica qué cambió en cada versión.</p>"
+          },
+          {
+            "id": "uninstall",
+            "q": "¿Cómo desinstalo Loggia por completo?",
+            "a": "\n<ol>\n<li>En Ajustes › Cloudflare, haz clic en <b>Quitar todo…</b> para eliminar de Cloudflare los registros de dominio, las rutas y la protección de acceso de Loggia.</li>\n<li>Cierra Loggia y muévelo de Aplicaciones a la Papelera.</li>\n<li>En Terminal, ejecuta <code>launchctl bootout gui/$(id -u)/com.useloggia.app.cloudflared</code> y luego elimina <code>~/Library/Application Support/Loggia</code>, <code>~/Library/Logs/Loggia</code> y <code>~/Library/LaunchAgents/com.useloggia.app.cloudflared.plist</code>.</li>\n<li>Elimina los elementos “Loggia” en Acceso a Llaveros.</li>\n</ol>\n"
+          }
+        ]
+      }
+    ]
+  },
+  "privacy": {
+    "h1": "Política de privacidad",
+    "updated": "Última actualización · octubre de 2026",
+    "note": "Esta traducción es solo de referencia. Si difiere de la versión en inglés, prevalece la versión en inglés.",
+    "lead": "Esta política cubre la app Loggia y este sitio web: qué se recopila, a quién se envía y las opciones que tienes.",
+    "sections": [
+      {
+        "h": "Qué recopilamos",
+        "body": "<p>Para activar, verificar o desactivar Pro, Loggia envía la clave de licencia y una etiqueta del dispositivo (el nombre de tu Mac más un código corto derivado de un identificador de hardware) a Dodo Payments mediante HTTPS. No se envía nada más.</p>\n<p>Loggia no tiene cuentas, ni analíticas, ni servidores propios.</p>"
+      },
+      {
+        "h": "Qué no recopilamos",
+        "body": "<p>Loggia no recopila ni recibe los servicios que publicas, tus dominios, tu token de API de Cloudflare, el tráfico que llega a tus servicios ni cómo usas la app. Todo se ejecuta en tu Mac o en tu propia cuenta de Cloudflare. Los visitantes llegan a tus servicios a través de Cloudflare, directamente a tu Mac.</p>\n<p>Los registros se quedan en tu Mac. Al exportar un diagnóstico se crea un archivo que envías tú mismo; se le quitan los tokens, la clave de licencia y tu carpeta personal.</p>"
+      },
+      {
+        "h": "Servicios de terceros",
+        "body": "<ul>\n<li><b>Cloudflare</b>: Loggia llama a la API de Cloudflare con tu token para gestionar túneles, registros de dominio y protección de acceso en tu cuenta. A tu cuenta se le aplica la política de privacidad de Cloudflare.</li>\n<li><b>GitHub</b>: para descargar cloudflared y comprobar si hay una versión más reciente.</li>\n<li><b>dl.useloggia.com</b>: para comprobar si hay una versión nueva de Loggia, una vez al día salvo que desactives las comprobaciones automáticas. La solicitud incluye el nombre y la versión de la app, la versión del framework de actualización y tu dirección IP; no se envía ningún perfil del sistema.</li>\n<li><b>DNS público</b>: para comprobar que tus dominios se resuelven.</li>\n<li><b>Dodo Payments</b>: nuestro proveedor de pagos y comerciante de registro. Al pagar, Dodo recopila tu nombre, tu correo electrónico y tus datos de facturación según su propia política de privacidad, y gestiona las facturas, los impuestos y los reembolsos. Loggia no recibe tus datos de pago.</li>\n<li><b>Este sitio web</b>: es estático y no usa cookies. Tanto él como las descargas se sirven a través de Cloudflare, que conserva registros de acceso estándar. Las visitas se cuentan con Cloudflare Web Analytics, que mide las páginas vistas y los tiempos de carga. Según Cloudflare, no usa cookies ni almacenamiento local, no crea huellas digitales de los visitantes y no recopila datos personales. La app no lo usa.</li>\n</ul>"
+      },
+      {
+        "h": "Almacenamiento de datos",
+        "body": "<ul>\n<li>Tu token de API de Cloudflare y tu clave de licencia Pro se guardan en el llavero de tu Mac.</li>\n<li>Los ajustes y la lista de servicios se guardan en <code>~/Library/Application Support/Loggia</code>; el registro del conector está en <code>~/Library/Logs/Loggia</code>.</li>\n<li>El desarrollador puede ver tu registro de compra (nombre, correo electrónico, ID de pago) en el panel de Dodo, solo para dar soporte y tramitar reembolsos.</li>\n</ul>"
+      },
+      {
+        "h": "Tus derechos y control",
+        "body": "<p>Puedes desactivar tu licencia en Ajustes › Licencia en cualquier momento. Para preguntar qué datos tenemos sobre ti, o para que se corrijan o se eliminen, escribe a <a href=\"mailto:support@useloggia.com\" translate=\"no\">support@useloggia.com</a>; respondemos en un plazo de 30 días.</p>\n<p>Si te encuentras en la UE o en el EEE, también tienes los derechos que te otorga el RGPD, incluida la portabilidad de los datos y el derecho a presentar una reclamación ante tu autoridad local de protección de datos.</p>"
+      },
+      {
+        "h": "Cambios",
+        "body": "<p>Si esta política cambia, la fecha de arriba cambia con ella.</p>"
+      }
+    ]
+  },
+  "changelog": {
+    "h1": "Historial de cambios",
+    "empty": "Todavía no hay versiones.",
+    "groups": {
+      "added": "Novedades",
+      "changed": "Cambios",
+      "fixed": "Correcciones",
+      "removed": "Eliminado"
+    }
+  },
+  "terms": {
+    "h1": "Términos del servicio",
+    "updated": "Última actualización · octubre de 2026",
+    "note": "Esta traducción es solo de referencia. Si difiere de la versión en inglés, prevalece la versión en inglés.",
+    "sections": [
+      {
+        "h": "Licencia",
+        "body": "<p>Estos Términos del servicio son también el acuerdo de licencia de Loggia. Loggia ofrece una versión gratuita y una versión Pro. La versión gratuita se puede usar sin coste; Pro requiere una clave de licencia comprada. Se te concede una licencia no exclusiva e intransferible para instalar y usar las versiones oficiales de Loggia en los Mac que posees o controlas. El software se licencia, no se vende.</p>"
+      },
+      {
+        "h": "Versión gratuita y Pro",
+        "body": "<p>La versión gratuita publica hasta 2 servicios y no puede activar nueva protección de acceso. Pro no tiene esos límites. Una licencia Pro cubre todas las versiones 1.x.</p>"
+      },
+      {
+        "h": "Clave de licencia",
+        "body": "<p>Una clave puede estar activa en hasta 2 de tus propios Mac a la vez. Para usarla en otro Mac, primero desactívala en Ajustes › Licencia en uno de los dos. La clave es solo para quien la compra: no la transfieras, alquiles, prestes, compartas ni revendas. Si pierdes tu clave, escribe a <a href=\"mailto:support@useloggia.com\" translate=\"no\">support@useloggia.com</a> y te la enviaremos de nuevo cuando hayamos confirmado la compra.</p>"
+      },
+      {
+        "h": "Activación y verificación",
+        "body": "<p>Para activar, verificar o desactivar, Loggia envía a Dodo Payments solo la clave y una etiqueta del dispositivo (el nombre de tu ordenador más un código corto derivado de un identificador de hardware). Si la verificación no puede conectarse, Pro sigue funcionando hasta 30 días más.</p>"
+      },
+      {
+        "h": "Tus datos y credenciales",
+        "body": "<p>Loggia configura túneles, registros de dominio y protección de acceso en tu propia cuenta de Cloudflare con el token que le das. Eres responsable de esa cuenta, de tus dominios y de los servicios que haces accesibles desde internet, incluido el cumplimiento de los términos de Cloudflare y de la ley aplicable. Loggia no aloja tus servicios y no ve tu tráfico. Tu token de API de Cloudflare y tu clave de licencia se guardan en el llavero de tu Mac, y el token solo se usa para llamar a Cloudflare. Loggia no nos envía tu token de Cloudflare, tus servicios ni datos de uso.</p>"
+      },
+      {
+        "h": "Restricciones",
+        "body": "<p>Sin el permiso previo por escrito del titular de los derechos de autor, no puedes: copiar, modificar, aplicar ingeniería inversa, descompilar ni desensamblar el software (salvo cuando la ley lo permita expresamente); redistribuirlo, alquilarlo, prestarlo, sublicenciarlo ni venderlo; eludir o manipular la verificación de la licencia; ni eliminar los avisos de derechos de autor.</p>"
+      },
+      {
+        "h": "Actualizaciones",
+        "body": "<p>Loggia busca versiones nuevas una vez al día, y cuando se lo pides, leyendo un feed de actualizaciones de dl.useloggia.com; la solicitud lleva el nombre y la versión de la app, la versión del framework de actualización y tu dirección IP, y ningún perfil del sistema. Una versión nueva solo se instala después de que la confirmes y solo si se verifican tanto la firma de código de Apple como la firma propia de la actualización. Puedes desactivar la búsqueda diaria en Ajustes. Las actualizaciones son gratuitas en ambos planes. Una actualización se rige por estos términos, salvo que traiga los suyos.</p>"
+      },
+      {
+        "h": "Componentes de terceros",
+        "body": "<p>Loggia descarga y ejecuta cloudflared, de Cloudflare, Inc., en tiempo de ejecución, e incluye Sparkle para las actualizaciones. Tienen licencias independientes (Apache License 2.0 y MIT), no regidas por este acuerdo. La lista está en la app, en Ajustes › Acerca de.</p>"
+      },
+      {
+        "h": "Compras y reembolsos",
+        "body": "<p>Dodo Payments procesa las compras como comerciante de registro y calcula los impuestos de tu región; a los pagos se aplican además los términos propios de Dodo. Los reembolsos se rigen por la <a href=\"{{root}}/refund\">Política de reembolso</a>. Esto no afecta a los derechos que la ley te otorga como consumidor.</p>"
+      },
+      {
+        "h": "Propiedad intelectual",
+        "body": "<p>El nombre, el icono y el software de Loggia, y sus derechos de autor, pertenecen a ydongy. Copyright (c) 2026 ydongy. Todos los derechos reservados.</p>"
+      },
+      {
+        "h": "Terminación",
+        "body": "<p>Si incumples estos términos, tu licencia termina automáticamente. Si tu clave de licencia deja de funcionar, por ejemplo tras un reembolso, Loggia vuelve a la versión gratuita.</p>"
+      },
+      {
+        "h": "Exención de garantías",
+        "body": "<p>EL SOFTWARE SE PROPORCIONA «TAL CUAL», SIN GARANTÍA DE NINGÚN TIPO, EXPRESA O IMPLÍCITA, INCLUIDAS LA COMERCIABILIDAD, LA IDONEIDAD PARA UN FIN DETERMINADO Y LA NO INFRACCIÓN.</p>"
+      },
+      {
+        "h": "Limitación de responsabilidad",
+        "body": "<p>En la máxima medida que permita la ley, el titular de los derechos de autor no es responsable de ningún daño indirecto, incidental o consecuente derivado del uso del software, y la responsabilidad total se limita al importe que pagaste por la licencia.</p>"
+      },
+      {
+        "h": "Cambios",
+        "body": "<p>Estos términos pueden actualizarse; la fecha de arriba indica la última versión. Si sigues usando Loggia tras una actualización, la aceptas.</p>"
+      }
+    ]
+  },
+  "refund": {
+    "h1": "Política de reembolso",
+    "updated": "Última actualización · octubre de 2026",
+    "note": "Esta traducción es solo de referencia. Si difiere de la versión en inglés, prevalece la versión en inglés.",
+    "sections": [
+      {
+        "h": "Reembolso en 14 días",
+        "body": "<p>Si Loggia Pro no te funciona, puedes pedir un reembolso completo en los 14 días siguientes a la compra. No tienes que dar ningún motivo.</p>"
+      },
+      {
+        "h": "Cómo pedirlo",
+        "body": "<p>Escribe a <a href=\"mailto:support@useloggia.com\" translate=\"no\">support@useloggia.com</a> desde la dirección con la que compraste e incluye el ID de pago de tu recibo, si lo tienes. Dodo Payments emite los reembolsos al método de pago original; los bancos suelen tardar de 3 a 5 días hábiles en reflejarlo.</p>"
+      },
+      {
+        "h": "Qué pasa con tu licencia",
+        "body": "<p>Cuando se completa un reembolso, la clave de licencia deja de funcionar y Loggia vuelve a la versión gratuita. No se desconecta nada: los servicios que ya publicaste siguen funcionando. La <a href=\"{{root}}/faq#after-refund\">sección de preguntas frecuentes</a> explica cómo los trata la versión gratuita. Puedes volver a comprar Pro en cualquier momento.</p>"
+      },
+      {
+        "h": "Cancelación",
+        "body": "<p>Pro es una compra única, no una suscripción, por lo que no hay nada que cancelar y nada se renueva.</p>"
+      },
+      {
+        "h": "Tus derechos legales",
+        "body": "<p>Esta política no afecta a los derechos que la ley te otorga como consumidor.</p>"
+      }
+    ]
+  },
+  "support": {
+    "h1": "Soporte",
+    "lead": "¿Algo no funciona o tienes una idea? Escríbenos. Leemos todos los mensajes.",
+    "sections": [
+      {
+        "h": "Escríbenos",
+        "body": "<p>Escribe a <a href=\"mailto:support@useloggia.com\" translate=\"no\">support@useloggia.com</a>. En Loggia, elige Ayuda › Enviar comentarios… y se abrirá un mensaje nuevo con las versiones de Loggia y de macOS ya rellenadas.</p>"
+      },
+      {
+        "h": "Qué nos tienes que contar",
+        "body": "<ul><li>Qué intentabas hacer.</li><li>Qué pasó en su lugar y el mensaje que viste.</li><li>Las versiones de Loggia y de macOS, si no usaste Enviar comentarios.</li></ul>"
+      },
+      {
+        "h": "Enviar un diagnóstico",
+        "body": "<p>Si algo sigue fallando, elige Ayuda › Exportar diagnóstico… (o Ajustes › Conector › Exportar…). Loggia guarda un archivo zip y lo muestra en el Finder; adjúntalo a tu correo. Los tokens y tu clave de licencia se eliminan, y tu carpeta personal se abrevia como ~. Loggia nunca envía el archivo por sí sola.</p>"
+      },
+      {
+        "h": "Antes de escribir",
+        "body": "<p>Las <a href=\"{{root}}/faq\">preguntas frecuentes</a> responden a lo más habitual, incluido <a href=\"{{root}}/faq#service-down\">qué hacer cuando un servicio no responde</a>. Para un reembolso, consulta la <a href=\"{{root}}/refund\">política de reembolso</a>.</p>"
+      },
+      {
+        "h": "Seguridad",
+        "body": "<p>Para informar de un problema de seguridad, escribe a la misma dirección con «Security» en el asunto y no lo publiques abiertamente.</p>"
+      }
+    ]
+  }
+}

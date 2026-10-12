@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Loggia 更新記錄</title>
+<meta name="description" content="Loggia 每個版本的更新內容。">
+<link rel="alternate" hreflang="en" href="https://useloggia.com/changelog">
+<link rel="alternate" hreflang="zh-CN" href="https://useloggia.com/zh/changelog">
+<link rel="alternate" hreflang="zh-Hant" href="https://useloggia.com/zh-hant/changelog">
+<link rel="alternate" hreflang="ja" href="https://useloggia.com/ja/changelog">
+<link rel="alternate" hreflang="ko" href="https://useloggia.com/ko/changelog">
+<link rel="alternate" hreflang="fr" href="https://useloggia.com/fr/changelog">
+<link rel="alternate" hreflang="de" href="https://useloggia.com/de/changelog">
+<link rel="alternate" hreflang="es" href="https://useloggia.com/es/changelog">
+<link rel="alternate" hreflang="pt-BR" href="https://useloggia.com/pt/changelog">
+<link rel="alternate" hreflang="x-default" href="https://useloggia.com/changelog">
+<link rel="canonical" href="https://useloggia.com/zh-hant/changelog">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Loggia">
+<meta property="og:title" content="Loggia 更新記錄">
+<meta property="og:description" content="Loggia 每個版本的更新內容。">
+<meta property="og:url" content="https://useloggia.com/zh-hant/changelog">
+<meta property="og:image" content="https://useloggia.com/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#f7f8f7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0e1211" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/style.css">
+<script src="/lang.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">跳到主要內容</a>
+<header class="site-header"><div class="wrap"><a class="brand" translate="no" href="/zh-hant/"><img src="/icon.svg" alt="">Loggia</a><nav><a href="/zh-hant/#download">下載</a><a href="/zh-hant/#pricing">價格</a><a href="/zh-hant/faq">常見問題</a><details class="lang-menu"><summary aria-label="語言"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.25"/><path d="M 1.75 8h12.5M8 1.75c1.7 1.8 2.5 3.9 2.5 6.25S9.7 12.45 8 14.25C6.3 12.45 5.5 10.35 5.5 8S6.3 3.55 8 1.75z"/></svg><span>繁體中文</span></summary><ul><li><a href="/changelog" hreflang="en" lang="en" data-lang="en">English</a></li><li><a href="/zh/changelog" hreflang="zh-CN" lang="zh-CN" data-lang="zh">简体中文</a></li><li><a href="/zh-hant/changelog" hreflang="zh-Hant" lang="zh-Hant" data-lang="zh-hant" aria-current="true">繁體中文</a></li><li><a href="/ja/changelog" hreflang="ja" lang="ja" data-lang="ja">日本語</a></li><li><a href="/ko/changelog" hreflang="ko" lang="ko" data-lang="ko">한국어</a></li><li><a href="/fr/changelog" hreflang="fr" lang="fr" data-lang="fr">Français</a></li><li><a href="/de/changelog" hreflang="de" lang="de" data-lang="de">Deutsch</a></li><li><a href="/es/changelog" hreflang="es" lang="es" data-lang="es">Español</a></li><li><a href="/pt/changelog" hreflang="pt-BR" lang="pt-BR" data-lang="pt">Português</a></li></ul></details></nav></div></header>
+<main id="main" class="wrap narrow page">
+<article>
+<h1>更新記錄</h1>
+<!-- releases -->
+<div class="release" id="v1.1.1">
+<div class="release-head"><h2>1.1.1</h2><time datetime="2026-10-11">2026-10-11</time></div>
+<h3>變更</h3>
+<ul lang="en"><li>Advice about proxy apps appears only when one is actually intercepting the connection, as one line saying what to set</li></ul>
+<h3>修正</h3>
+<ul lang="en"><li>A published service showed as unreachable on this Mac while it opened fine elsewhere: the public check no longer goes through this Mac's name lookup</li><li>Right after publishing, the check and the built-in web page no longer look up the new domain on this Mac before it opens from the internet; a proxy app could remember it as missing for half an hour</li></ul>
+</div>
+<div class="release" id="v1.1.0">
+<div class="release-head"><h2>1.1.0</h2><time datetime="2026-10-11">2026-10-11</time></div>
+<h3>新增</h3>
+<ul lang="en"><li>Send Feedback, in the Help menu and the menu bar icon's right-click menu, opens a new email to support with your versions filled in</li><li>Help also has Loggia Support and Export Diagnostics, and Settings › About has Contact Support</li><li>Error messages that ask for diagnostics now say where to send them</li><li>Right-click the menu bar icon for Open Loggia, Settings, Restart cloudflared and Quit Loggia, so Loggia can be quit without a Dock icon</li><li>While cloudflared restarts from that menu the icon shows it; a failed restart says so and opens the link details</li><li>When cloudflared can't reach Cloudflare, a section that opens with a click lists what to set in a proxy app in enhanced or TUN mode: the domains to route directly and the fake-IP filter</li></ul>
+<h3>變更</h3>
+<ul lang="en"><li>Link details call their last group Cloudflare &amp; Connector, and the first publish step is Prepare Connector, matching the Settings tabs</li></ul>
+<h3>修正</h3>
+<ul lang="en"><li>The sidebar showed a published service as working while the menu bar panel and its details showed it unreachable</li><li>The menu bar panel sometimes kept a blank band above and below its content after a problem cleared</li><li>The link details started too far down the window</li><li>The status lamp slid across the window when the sidebar was collapsed or expanded</li><li>The link details gave only a generic message when a proxy app left some connections working</li></ul>
+</div>
+<div class="release" id="v1.0.0">
+<div class="release-head"><h2>1.0.0</h2><time datetime="2026-10-10">2026-10-10</time></div>
+<h3>新增</h3>
+<ul lang="en"><li>Publish a local port or external URL as an HTTPS domain in one click; every step can be retried, and unpublishing leaves nothing behind on Cloudflare</li><li>Link health: which segment is down, why, and which button fixes it; colored status in the menu bar icon</li><li>Menu bar panel: one calm status line that grows into the cause and a mini chain only when something is wrong; copy and open buttons appear on each service when you hover it or focus it with the keyboard</li><li>Main window: the sidebar shows when the services were last checked; the status capsule stays in the toolbar when the sidebar is hidden; View › Link Details (shift-command-I) opens the link details</li><li>Link details: the chain and its three numbers share one card, and each cause hangs under the link that broke, with a small pointer to it and the button that fixes it</li><li>Email one-time-code access protection for published services</li><li>Changes made in the Cloudflare dashboard are detected at launch, with two repair options</li><li>Local service discovery and an embedded web view</li><li>Appearance (system / light / dark) and nine interface languages, applied immediately</li><li>Free plan publishes up to 2 services; Pro has no limit and adds access protection (Settings › License)</li><li>Automatic updates</li></ul>
+</div>
+<!-- /releases -->
+</article>
+</main>
+<footer class="site-footer"><div class="wrap"><div class="foot-brand"><a class="brand" translate="no" href="/zh-hant/"><img src="/icon.svg" alt="">Loggia</a><p>把 Mac 上的服務，安全地放上網際網路。</p></div><nav class="foot-cols" aria-label="Loggia"><div><h2>產品</h2><a href="/zh-hant/#download">下載</a><a href="/zh-hant/#pricing">價格</a></div><div><h2>支援</h2><a href="/zh-hant/support">聯絡支援</a><a href="/zh-hant/faq">常見問題</a><a href="/zh-hant/changelog">更新記錄</a></div><div><h2>法律</h2><a href="/zh-hant/privacy">隱私權政策</a><a href="/zh-hant/terms">服務條款</a><a href="/zh-hant/refund">退款政策</a></div><div><h2>聯絡</h2><a href="mailto:support@useloggia.com">support<wbr>@useloggia.com</a></div></nav><div class="foot-bottom"><span>© 2026 ydongy. 保留所有權利。</span><span>官方下載只在 <strong translate="no">useloggia.com</strong>，其他來源的安裝檔可能遭到竄改。</span></div><nav class="langs" aria-label="語言"><a href="/changelog" hreflang="en" lang="en" data-lang="en">English</a><a href="/zh/changelog" hreflang="zh-CN" lang="zh-CN" data-lang="zh">简体中文</a><a href="/zh-hant/changelog" hreflang="zh-Hant" lang="zh-Hant" data-lang="zh-hant" aria-current="true">繁體中文</a><a href="/ja/changelog" hreflang="ja" lang="ja" data-lang="ja">日本語</a><a href="/ko/changelog" hreflang="ko" lang="ko" data-lang="ko">한국어</a><a href="/fr/changelog" hreflang="fr" lang="fr" data-lang="fr">Français</a><a href="/de/changelog" hreflang="de" lang="de" data-lang="de">Deutsch</a><a href="/es/changelog" hreflang="es" lang="es" data-lang="es">Español</a><a href="/pt/changelog" hreflang="pt-BR" lang="pt-BR" data-lang="pt">Português</a></nav></div></footer>
+</body>
+</html>

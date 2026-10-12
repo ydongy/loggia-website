@@ -1,0 +1,39 @@
+<!doctype html>
+<!-- Source of public/og.png (1200x630). Render: scripts/export-og.sh -->
+<meta charset="utf-8">
+<style>
+  html, body { margin: 0; width: 1200px; height: 630px; overflow: hidden; }
+  body {
+    position: relative; background: #0e1211; color: #e9eeec;
+    font-family: -apple-system, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+  }
+  .glow { position: absolute; inset: 0; background:
+    radial-gradient(520px 360px at 930px 150px, rgba(52, 211, 153, .30), transparent 70%),
+    radial-gradient(640px 420px at 120px 640px, rgba(31, 94, 78, .55), transparent 70%),
+    radial-gradient(480px 300px at 1120px 600px, rgba(52, 211, 153, .12), transparent 70%); }
+  .icon { position: absolute; left: 84px; top: 84px; width: 132px; height: 132px; border-radius: 30px;
+    box-shadow: 0 18px 50px rgba(0, 0, 0, .45); }
+  h1 { position: absolute; left: 84px; top: 242px; margin: 0; font-size: 118px; line-height: 1; font-weight: 600;
+    letter-spacing: -2px; font-family: "New York", "Iowan Old Style", "Palatino", Georgia, serif; }
+  p { position: absolute; left: 86px; top: 386px; margin: 0; font-size: 31px; line-height: 1.4; color: #a3afaa; width: 700px; }
+  .domain { position: absolute; left: 86px; top: 548px; font: 600 24px/1 "SF Mono", Menlo, monospace; letter-spacing: 2px; color: #34d399; }
+  svg.chain { position: absolute; right: 70px; top: 150px; width: 330px; height: 330px; }
+</style>
+<div class="glow"></div>
+<img class="icon" src="../public/icon.svg" alt="">
+<h1>Loggia</h1>
+<p>Put the services on your Mac on the internet, safely. Through your own Cloudflare account, with a lamp that shows if it is up.</p>
+<div class="domain">USELOGGIA.COM</div>
+<svg class="chain" viewBox="0 0 330 330" fill="none">
+  <g stroke="#34d399" stroke-width="3" stroke-linecap="round">
+    <path d="M165 66v66" opacity=".9"/><path d="M165 198v66" opacity=".9"/>
+  </g>
+  <g fill="#0e1211" stroke="#34d399" stroke-width="3.5">
+    <circle cx="165" cy="40" r="26"/><circle cx="165" cy="165" r="26"/><circle cx="165" cy="290" r="26"/>
+  </g>
+  <g fill="#34d399">
+    <circle cx="165" cy="40" r="9"/><circle cx="165" cy="165" r="9"/><circle cx="165" cy="290" r="9"/>
+  </g>
+  <circle cx="165" cy="165" r="52" stroke="#34d399" stroke-opacity=".25" stroke-width="2"/>
+  <circle cx="165" cy="165" r="78" stroke="#34d399" stroke-opacity=".12" stroke-width="2"/>
+</svg>

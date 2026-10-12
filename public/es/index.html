@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Loggia: publica en internet los servicios de tu Mac, de forma segura</title>
+<meta name="description" content="Loggia convierte un puerto local en una dirección HTTPS en tu propia cuenta de Cloudflare y muestra si cada servicio está activo.">
+<link rel="alternate" hreflang="en" href="https://useloggia.com/">
+<link rel="alternate" hreflang="zh-CN" href="https://useloggia.com/zh/">
+<link rel="alternate" hreflang="zh-Hant" href="https://useloggia.com/zh-hant/">
+<link rel="alternate" hreflang="ja" href="https://useloggia.com/ja/">
+<link rel="alternate" hreflang="ko" href="https://useloggia.com/ko/">
+<link rel="alternate" hreflang="fr" href="https://useloggia.com/fr/">
+<link rel="alternate" hreflang="de" href="https://useloggia.com/de/">
+<link rel="alternate" hreflang="es" href="https://useloggia.com/es/">
+<link rel="alternate" hreflang="pt-BR" href="https://useloggia.com/pt/">
+<link rel="alternate" hreflang="x-default" href="https://useloggia.com/">
+<link rel="canonical" href="https://useloggia.com/es/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Loggia">
+<meta property="og:title" content="Loggia: publica en internet los servicios de tu Mac, de forma segura">
+<meta property="og:description" content="Loggia convierte un puerto local en una dirección HTTPS en tu propia cuenta de Cloudflare y muestra si cada servicio está activo.">
+<meta property="og:url" content="https://useloggia.com/es/">
+<meta property="og:image" content="https://useloggia.com/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#f7f8f7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0e1211" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/style.css">
+<script src="/lang.js"></script>
+<script src="/download.js" defer></script>
+<script src="/carousel.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Ir al contenido</a>
+<header class="site-header"><div class="wrap"><a class="brand" translate="no" href="/es/"><img src="/icon.svg" alt="">Loggia</a><nav><a href="#download">Descargar</a><a href="#pricing">Precios</a><a href="/es/faq">Preguntas frecuentes</a><details class="lang-menu"><summary aria-label="Idioma"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.25"/><path d="M 1.75 8h12.5M8 1.75c1.7 1.8 2.5 3.9 2.5 6.25S9.7 12.45 8 14.25C6.3 12.45 5.5 10.35 5.5 8S6.3 3.55 8 1.75z"/></svg><span>Español</span></summary><ul><li><a href="/" hreflang="en" lang="en" data-lang="en">English</a></li><li><a href="/zh/" hreflang="zh-CN" lang="zh-CN" data-lang="zh">简体中文</a></li><li><a href="/zh-hant/" hreflang="zh-Hant" lang="zh-Hant" data-lang="zh-hant">繁體中文</a></li><li><a href="/ja/" hreflang="ja" lang="ja" data-lang="ja">日本語</a></li><li><a href="/ko/" hreflang="ko" lang="ko" data-lang="ko">한국어</a></li><li><a href="/fr/" hreflang="fr" lang="fr" data-lang="fr">Français</a></li><li><a href="/de/" hreflang="de" lang="de" data-lang="de">Deutsch</a></li><li><a href="/es/" hreflang="es" lang="es" data-lang="es" aria-current="true">Español</a></li><li><a href="/pt/" hreflang="pt-BR" lang="pt-BR" data-lang="pt">Português</a></li></ul></details></nav></div></header>
+<main id="main">
+<section class="hero wrap">
+<h1>Publica en internet los servicios de tu Mac, de forma segura.</h1>
+<p class="lead">Loggia convierte un puerto local en una dirección HTTPS en tu propia cuenta de Cloudflare y muestra si cada servicio está activo.</p>
+<a class="button" href="#download">Descargar para Mac</a>
+<p class="state"><span class="lamp on breathe"></span>En línea</p>
+<div class="chain" role="img" aria-label="La conexión desde este Mac a la dirección pública, pasando por cloudflared y Cloudflare, con los cuatro tramos funcionando.">
+<div class="node on"><span class="ring"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><rect x="3" y="3.5" width="10" height="7" rx="1.3"/><path d="M 1.5 12.5h13"/></svg></span><b>Este Mac</b><small>localhost:5000</small></div>
+<span class="wire lit"></span>
+<div class="node on"><span class="ring"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M 2.5 13V8a5.5 5.5 0 0 1 11 0v5"/><path d="M 6 13V9a2 2 0 0 1 4 0v4"/></svg></span><b>cloudflared</b><small>En marcha</small></div>
+<span class="wire lit"></span>
+<div class="node on"><span class="ring"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M 4.6 12.5h6.9a2.9 2.9 0 0 0 .3-5.8A4 4 0 0 0 4.1 7.3a2.6 2.6 0 0 0 .5 5.2z"/></svg></span><b>Cloudflare</b><small>4 conexiones</small></div>
+<span class="wire lit"></span>
+<div class="node on"><span class="ring"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="8" cy="8" r="6"/><path d="M 2 8h12M8 2c2 2 2 10 0 12M8 2c-2 2-2 10 0 12"/></svg></span><b>Pública</b><small>nas.example.com</small></div>
+</div>
+</section>
+
+<section class="carousel wrap" aria-roledescription="carousel" aria-label="Capturas">
+<div class="slides" tabindex="0">
+<figure class="slide main" id="shot-main" aria-roledescription="slide" aria-label="1 / 5"><div class="frame"><picture><source srcset="/img/app-es-main-dark.webp" media="(prefers-color-scheme: dark)" width="2000" height="1309"><img src="/img/app-es-main-light.webp" width="2000" height="1309" alt="La ventana de Loggia: la tarjeta de conexión muestra En línea, la barra lateral lista cinco servicios, dos de ellos publicados, y está abierto el detalle del Panel NAS publicado." decoding="async"></picture></div><figcaption><b>Todos tus servicios en una ventana</b> Mira si cada servicio funciona y ábrelo ahí mismo.</figcaption></figure>
+<figure class="slide link" id="shot-link" aria-roledescription="slide" aria-label="2 / 5"><div class="frame"><picture><source srcset="/img/app-es-link-dark.webp" media="(prefers-color-scheme: dark)" width="2000" height="1309"><img src="/img/app-es-link-light.webp" width="2000" height="1309" alt="Detalle de la conexión, funciona en parte: Grafana no responde en este Mac. Los demás tramos están bien, y la explicación dice que nada escucha en el puerto 3000, con un botón Ver servicio." loading="lazy" decoding="async"></picture></div><figcaption><b>Cuando algo falla, te dice dónde</b> La conexión se comprueba en cuatro tramos. El roto queda marcado, con el botón que lo arregla.</figcaption></figure>
+<figure class="slide publish" id="shot-publish" aria-roledescription="slide" aria-label="3 / 5"><div class="frame"><picture><source srcset="/img/app-es-publish-dark.webp" media="(prefers-color-scheme: dark)" width="2000" height="1309"><img src="/img/app-es-publish-light.webp" width="2000" height="1309" alt="Detalle de Jupyter justo después de publicarlo: «Publicar en internet» está activado y jupyter.example.com es accesible." loading="lazy" decoding="async"></picture></div><figcaption><b>Publica con un interruptor</b> Activa «Publicar en internet» y elige un dominio. El puerto local obtiene una dirección HTTPS.</figcaption></figure>
+<figure class="slide access" id="shot-access" aria-roledescription="slide" aria-label="4 / 5"><div class="frame"><picture><source srcset="/img/app-es-access-dark.webp" media="(prefers-color-scheme: dark)" width="2000" height="1309"><img src="/img/app-es-access-light.webp" width="2000" height="1309" alt="Protección de acceso de Panel NAS: «Verificar el correo antes de acceder» está activado, hay dos correos permitidos y se ha fijado la validez de la sesión." loading="lazy" decoding="async"></picture></div><figcaption><b>Protégelo con un código por correo</b> Activa la protección de acceso y indica quién puede abrir la dirección. Los visitantes confirman primero su correo. Forma parte de Pro.</figcaption></figure>
+<figure class="slide panel" id="shot-panel" aria-roledescription="slide" aria-label="5 / 5"><div class="frame"><picture><source srcset="/img/app-es-panel-dark.webp" media="(prefers-color-scheme: dark)" width="680" height="546"><img src="/img/app-es-panel-light.webp" width="680" height="546" alt="El panel de la barra de menús: la conexión está en línea y se listan cinco servicios con su estado." loading="lazy" decoding="async"></picture></div><figcaption><b>Siempre en la barra de menús</b> Mira el estado de cada servicio sin abrir la ventana.</figcaption></figure>
+</div>
+<div class="carousel-nav"><button type="button" class="prev" aria-label="Anterior" hidden><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M 10 3 5 8l5 5"/></svg></button><span class="dots"><a href="#shot-main" aria-label="Todos tus servicios en una ventana" aria-current="true"></a><a href="#shot-link" aria-label="Cuando algo falla, te dice dónde"></a><a href="#shot-publish" aria-label="Publica con un interruptor"></a><a href="#shot-access" aria-label="Protégelo con un código por correo"></a><a href="#shot-panel" aria-label="Siempre en la barra de menús"></a></span><button type="button" class="next" aria-label="Siguiente" hidden><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m6 3 5 5-5 5"/></svg></button></div>
+</section>
+
+<section class="section wrap" id="lamps">
+<h2>Cada servicio tiene un indicador.</h2>
+<p class="lead">La forma indica el estado, así que puedes leerlo sin depender del color.</p>
+<div class="lamps">
+<div><span class="lamp on"></span><h3>En línea</h3><p>Accesible en su dirección pública.</p></div>
+<div><span class="lamp warn"></span><h3>Funciona en parte</h3><p>Por ejemplo, un registro de dominio nuevo todavía no ha surtido efecto.</p></div>
+<div><span class="lamp error"></span><h3>Inaccesible</h3><p>Una parte de la conexión no funciona. Loggia te muestra cuál.</p></div>
+<div><span class="lamp off"></span><h3>Solo en este Mac</h3><p>No está publicado. No es un fallo.</p></div>
+</div>
+</section>
+
+
+<section class="section wrap" id="account">
+<h2>Solo tu propia cuenta.</h2>
+<div class="facts">
+<div><h3>Sin servidores intermedios</h3><p>Loggia funciona con tu cuenta de Cloudflare, sin servidores de terceros de por medio.</p></div>
+<div><h3>Tu token no sale de tu Mac</h3><p>El token de API se guarda en el llavero de tu Mac y solo se envía a Cloudflare.</p></div>
+<div><h3>La app no recopila nada</h3><p>Los ajustes y la lista de servicios se quedan en tu Mac. Solo activar Pro envía algo sobre ti: una clave de licencia y una etiqueta del dispositivo, a Dodo Payments. Consulta la <a href="/es/privacy">Política de privacidad</a>.</p></div>
+<div><h3>Solo las personas que indiques</h3><p>Activa la protección de acceso en un servicio y los visitantes inician sesión con un código de un solo uso enviado a un correo que hayas autorizado.</p></div>
+</div>
+</section>
+
+<section class="section wrap" id="how">
+<h2>Se configura en tres pasos.</h2>
+<ol class="steps">
+<li><h3>Pega un token de API de Cloudflare</h3><p>“Crear un token en Cloudflare” abre una plantilla con los permisos ya seleccionados.</p></li>
+<li><h3>Deja que Loggia prepare el entorno</h3><p>Descarga cloudflared, de Cloudflare, y lo mantiene en marcha por ti.</p></li>
+<li><h3>Añade un servicio y publícalo</h3><p>Elige un puerto local, activa “Publicar en internet” y elige un dominio.</p></li>
+</ol>
+</section>
+
+<section class="section wrap download" id="download" data-version="Versión {v} · macOS {os} o posterior" data-version-no-os="Versión {v}" data-button="Descargar Loggia {v}" data-error="La descarga no está disponible en este momento. Vuelve a intentarlo más tarde.">
+<h2>Descargar Loggia</h2>
+<p class="lead">La descarga es la versión gratuita. Pro es un pago único, no una suscripción.</p>
+<p class="status" id="status">Para macOS&nbsp;26 o posterior.</p>
+<div class="actions">
+<a class="button" id="download-button" href="#" hidden>Descargar</a>
+<a class="button secondary" id="buy-button" href="https://checkout.dodopayments.com/buy/pdt_0NpQI1RCtsxAnPDY5N5xH" rel="noopener">Comprar Pro</a>
+</div>
+<p class="official"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M 8 1.5 2.5 3.5v4c0 3.3 2.3 6 5.5 7 3.2-1 5.5-3.7 5.5-7v-4z"/><path d="m5.5 8 1.8 1.8L10.7 6.4"/></svg><span>Las descargas oficiales están solo en <strong translate="no">useloggia.com</strong>. Un instalador de otro sitio podría estar alterado.</span></p>
+<noscript><p class="note">Activa JavaScript para ver la última versión.</p></noscript>
+<p class="note">El pago lo gestiona Dodo Payments; tu clave de licencia llega por correo electrónico.</p>
+<p class="checksum" id="checksum" hidden><span id="sha"></span><br>Para verificarlo, compáralo con el resultado de <code>shasum -a 256</code> sobre el archivo descargado.</p>
+
+<div class="plans-wrap" id="pricing">
+<table class="plans">
+<thead><tr><th scope="col"><span class="visually-hidden">Función</span></th><th scope="col">Gratis</th><th scope="col">Pro</th></tr></thead>
+<tbody>
+<tr><th scope="row">Precio</th><td>Gratis</td><td>19 US$, pago único (precio de lanzamiento)</td></tr>
+<tr><th scope="row">Servicios en este Mac</th><td>Ilimitados</td><td>Ilimitados</td></tr>
+<tr><th scope="row">Servicios publicados en internet</th><td>Hasta 2</td><td>Ilimitados</td></tr>
+<tr><th scope="row">Protección de acceso con códigos por correo</th><td><span aria-label="No incluido">-</span></td><td>Incluida</td></tr>
+<tr><th scope="row">Diagnóstico y limpieza de la conexión</th><td>Incluido</td><td>Incluido</td></tr>
+</tbody>
+</table>
+<p class="terms">Al comprar Pro recibes una clave de licencia; introdúcela en Ajustes › Licencia para actualizar. Una licencia sirve para 2 Mac y cubre todas las versiones 1.x. Para los reembolsos en los 14 días siguientes a la compra, consulta la <a href="/es/refund">Política de reembolso</a>.</p>
+</div>
+
+<p class="install">Abre el dmg y arrastra Loggia a Aplicaciones, luego ábrelo y sigue la configuración. Necesitas una cuenta de Cloudflare y un dominio gestionado por Cloudflare. ¿Tienes dudas? Lee las <a href="/es/faq">preguntas frecuentes</a>.</p>
+</section>
+</main>
+<footer class="site-footer"><div class="wrap"><div class="foot-brand"><a class="brand" translate="no" href="/es/"><img src="/icon.svg" alt="">Loggia</a><p>Publica en internet los servicios de tu Mac, de forma segura.</p></div><nav class="foot-cols" aria-label="Loggia"><div><h2>Producto</h2><a href="#download">Descargar</a><a href="#pricing">Precios</a></div><div><h2>Ayuda</h2><a href="/es/support">Contactar con soporte</a><a href="/es/faq">Preguntas frecuentes</a><a href="/es/changelog">Historial de cambios</a></div><div><h2>Legal</h2><a href="/es/privacy">Política de privacidad</a><a href="/es/terms">Términos del servicio</a><a href="/es/refund">Política de reembolso</a></div><div><h2>Contacto</h2><a href="mailto:support@useloggia.com">support<wbr>@useloggia.com</a></div></nav><div class="foot-bottom"><span>© 2026 ydongy. Todos los derechos reservados.</span><span>Las descargas oficiales están solo en <strong translate="no">useloggia.com</strong>. Un instalador de otro sitio podría estar alterado.</span></div><nav class="langs" aria-label="Idioma"><a href="/" hreflang="en" lang="en" data-lang="en">English</a><a href="/zh/" hreflang="zh-CN" lang="zh-CN" data-lang="zh">简体中文</a><a href="/zh-hant/" hreflang="zh-Hant" lang="zh-Hant" data-lang="zh-hant">繁體中文</a><a href="/ja/" hreflang="ja" lang="ja" data-lang="ja">日本語</a><a href="/ko/" hreflang="ko" lang="ko" data-lang="ko">한국어</a><a href="/fr/" hreflang="fr" lang="fr" data-lang="fr">Français</a><a href="/de/" hreflang="de" lang="de" data-lang="de">Deutsch</a><a href="/es/" hreflang="es" lang="es" data-lang="es" aria-current="true">Español</a><a href="/pt/" hreflang="pt-BR" lang="pt-BR" data-lang="pt">Português</a></nav></div></footer>
+</body>
+</html>

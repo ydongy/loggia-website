@@ -1,0 +1,138 @@
+[
+  {
+    "version": "1.1.1",
+    "date": "2026-10-11",
+    "title": {
+      "en": "",
+      "zh": ""
+    },
+    "groups": [
+      {
+        "kind": "changed",
+        "items": {
+          "en": [
+            "Advice about proxy apps appears only when one is actually intercepting the connection, as one line saying what to set"
+          ],
+          "zh": [
+            "只有确认代理软件拦截了连接时才给出代理建议，用一句话说明要改什么"
+          ]
+        }
+      },
+      {
+        "kind": "fixed",
+        "items": {
+          "en": [
+            "A published service showed as unreachable on this Mac while it opened fine elsewhere: the public check no longer goes through this Mac's name lookup",
+            "Right after publishing, the check and the built-in web page no longer look up the new domain on this Mac before it opens from the internet; a proxy app could remember it as missing for half an hour"
+          ],
+          "zh": [
+            "已公开的服务在别处能打开，在这台 Mac 上却显示无法访问：公网检查不再经过这台 Mac 的域名解析",
+            "刚公开后，在新域名能从外网打开之前，检查和内置网页不再在这台 Mac 上解析它；否则代理软件可能把它记成不存在长达半小时"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "version": "1.1.0",
+    "date": "2026-10-11",
+    "title": {
+      "en": "",
+      "zh": ""
+    },
+    "groups": [
+      {
+        "kind": "added",
+        "items": {
+          "en": [
+            "Send Feedback, in the Help menu and the menu bar icon's right-click menu, opens a new email to support with your versions filled in",
+            "Help also has Loggia Support and Export Diagnostics, and Settings › About has Contact Support",
+            "Error messages that ask for diagnostics now say where to send them",
+            "Right-click the menu bar icon for Open Loggia, Settings, Restart cloudflared and Quit Loggia, so Loggia can be quit without a Dock icon",
+            "While cloudflared restarts from that menu the icon shows it; a failed restart says so and opens the link details",
+            "When cloudflared can't reach Cloudflare, a section that opens with a click lists what to set in a proxy app in enhanced or TUN mode: the domains to route directly and the fake-IP filter"
+          ],
+          "zh": [
+            "帮助菜单和菜单栏图标的右键菜单新增“发送反馈”，会打开一封已填好版本信息、发给支持的新邮件",
+            "帮助菜单还有“Loggia 支持”和“导出诊断信息”，设置 › 关于里有“联系支持”",
+            "需要诊断信息的出错提示现在会说明发到哪里",
+            "右键点菜单栏图标，可以打开 Loggia、设置、重启 cloudflared、退出 Loggia，不显示 Dock 图标也能退出",
+            "从这个菜单重启 cloudflared 时，图标会显示进行中；重启失败会说明，并可打开链路详情",
+            "cloudflared 连不上 Cloudflare 时，可以点开一段说明，查看代理软件在增强模式或 TUN 模式下要怎么设置：哪些域名设为直连，以及 Fake-IP 过滤"
+          ]
+        }
+      },
+      {
+        "kind": "changed",
+        "items": {
+          "en": [
+            "Link details call their last group Cloudflare & Connector, and the first publish step is Prepare Connector, matching the Settings tabs"
+          ],
+          "zh": [
+            "链路详情的最后一组改名为“Cloudflare 与连接器”，发布的第一步改名为“准备连接器”，与设置里的标签页一致"
+          ]
+        }
+      },
+      {
+        "kind": "fixed",
+        "items": {
+          "en": [
+            "The sidebar showed a published service as working while the menu bar panel and its details showed it unreachable",
+            "The menu bar panel sometimes kept a blank band above and below its content after a problem cleared",
+            "The link details started too far down the window",
+            "The status lamp slid across the window when the sidebar was collapsed or expanded",
+            "The link details gave only a generic message when a proxy app left some connections working"
+          ],
+          "zh": [
+            "已公开的服务在菜单栏面板和服务详情里显示无法访问时，侧栏却仍显示正常",
+            "问题恢复后，菜单栏面板有时会在内容上下留出一段空白",
+            "链路详情离窗口顶部太远",
+            "收起或展开侧栏时，状态灯会在窗口里滑动",
+            "代理软件只让部分连接正常时，链路详情只给出笼统的提示"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "version": "1.0.0",
+    "date": "2026-10-10",
+    "title": {
+      "en": "",
+      "zh": ""
+    },
+    "groups": [
+      {
+        "kind": "added",
+        "items": {
+          "en": [
+            "Publish a local port or external URL as an HTTPS domain in one click; every step can be retried, and unpublishing leaves nothing behind on Cloudflare",
+            "Link health: which segment is down, why, and which button fixes it; colored status in the menu bar icon",
+            "Menu bar panel: one calm status line that grows into the cause and a mini chain only when something is wrong; copy and open buttons appear on each service when you hover it or focus it with the keyboard",
+            "Main window: the sidebar shows when the services were last checked; the status capsule stays in the toolbar when the sidebar is hidden; View › Link Details (shift-command-I) opens the link details",
+            "Link details: the chain and its three numbers share one card, and each cause hangs under the link that broke, with a small pointer to it and the button that fixes it",
+            "Email one-time-code access protection for published services",
+            "Changes made in the Cloudflare dashboard are detected at launch, with two repair options",
+            "Local service discovery and an embedded web view",
+            "Appearance (system / light / dark) and nine interface languages, applied immediately",
+            "Free plan publishes up to 2 services; Pro has no limit and adds access protection (Settings › License)",
+            "Automatic updates"
+          ],
+          "zh": [
+            "一键把本机端口或外部网址公开为 HTTPS 域名；每一步都可以重试，取消公开后云端不留残余",
+            "链路状态：哪一段不通、为什么、点哪个按钮修复；菜单栏图标可显示彩色状态",
+            "菜单栏面板：平时只有一行状态，出问题时才展开成原因和迷你链路；鼠标悬停或键盘聚焦到某个服务时，才显示复制和打开按钮",
+            "主窗口：侧栏会说明上次检查是多久以前；收起侧栏时状态胶囊仍留在工具栏；「显示」菜单里的「链路详情」（Shift-Command-I）可以用键盘打开",
+            "链路详情：链路和三个数字放在同一张卡片里，每个原因都挂在出问题的那一段下面，用一个小箭头指向它，并带着修复它的按钮",
+            "为公开的服务开启邮箱验证码访问保护",
+            "在 Cloudflare 控制台里改动的内容会在启动时被发现，并提供两种修复方式",
+            "本机服务发现和内嵌网页",
+            "外观（跟随系统 / 浅色 / 深色）和九种界面语言，选完立即生效",
+            "免费版最多公开 2 个服务；Pro 不限数量并含访问保护（设置 › 许可）",
+            "自动更新"
+          ]
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Loggia: Mac의 서비스를 인터넷에 안전하게 공개합니다</title>
+<meta name="description" content="Loggia는 로컬 포트를 내 Cloudflare 계정의 HTTPS 주소로 공개하고, 각 서비스가 정상인지 보여 줍니다.">
+<link rel="alternate" hreflang="en" href="https://useloggia.com/">
+<link rel="alternate" hreflang="zh-CN" href="https://useloggia.com/zh/">
+<link rel="alternate" hreflang="zh-Hant" href="https://useloggia.com/zh-hant/">
+<link rel="alternate" hreflang="ja" href="https://useloggia.com/ja/">
+<link rel="alternate" hreflang="ko" href="https://useloggia.com/ko/">
+<link rel="alternate" hreflang="fr" href="https://useloggia.com/fr/">
+<link rel="alternate" hreflang="de" href="https://useloggia.com/de/">
+<link rel="alternate" hreflang="es" href="https://useloggia.com/es/">
+<link rel="alternate" hreflang="pt-BR" href="https://useloggia.com/pt/">
+<link rel="alternate" hreflang="x-default" href="https://useloggia.com/">
+<link rel="canonical" href="https://useloggia.com/ko/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Loggia">
+<meta property="og:title" content="Loggia: Mac의 서비스를 인터넷에 안전하게 공개합니다">
+<meta property="og:description" content="Loggia는 로컬 포트를 내 Cloudflare 계정의 HTTPS 주소로 공개하고, 각 서비스가 정상인지 보여 줍니다.">
+<meta property="og:url" content="https://useloggia.com/ko/">
+<meta property="og:image" content="https://useloggia.com/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#f7f8f7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0e1211" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/style.css">
+<script src="/lang.js"></script>
+<script src="/download.js" defer></script>
+<script src="/carousel.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">본문으로 건너뛰기</a>
+<header class="site-header"><div class="wrap"><a class="brand" translate="no" href="/ko/"><img src="/icon.svg" alt="">Loggia</a><nav><a href="#download">다운로드</a><a href="#pricing">가격</a><a href="/ko/faq">자주 묻는 질문</a><details class="lang-menu"><summary aria-label="언어"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.25"/><path d="M 1.75 8h12.5M8 1.75c1.7 1.8 2.5 3.9 2.5 6.25S9.7 12.45 8 14.25C6.3 12.45 5.5 10.35 5.5 8S6.3 3.55 8 1.75z"/></svg><span>한국어</span></summary><ul><li><a href="/" hreflang="en" lang="en" data-lang="en">English</a></li><li><a href="/zh/" hreflang="zh-CN" lang="zh-CN" data-lang="zh">简体中文</a></li><li><a href="/zh-hant/" hreflang="zh-Hant" lang="zh-Hant" data-lang="zh-hant">繁體中文</a></li><li><a href="/ja/" hreflang="ja" lang="ja" data-lang="ja">日本語</a></li><li><a href="/ko/" hreflang="ko" lang="ko" data-lang="ko" aria-current="true">한국어</a></li><li><a href="/fr/" hreflang="fr" lang="fr" data-lang="fr">Français</a></li><li><a href="/de/" hreflang="de" lang="de" data-lang="de">Deutsch</a></li><li><a href="/es/" hreflang="es" lang="es" data-lang="es">Español</a></li><li><a href="/pt/" hreflang="pt-BR" lang="pt-BR" data-lang="pt">Português</a></li></ul></details></nav></div></header>
+<main id="main">
+<section class="hero wrap">
+<h1><span>Mac의 서비스를</span><span>인터넷에 안전하게 공개합니다.</span></h1>
+<p class="lead">Loggia는 로컬 포트를 내 Cloudflare 계정의 HTTPS 주소로 공개하고, 각 서비스가 정상인지 보여 줍니다.</p>
+<a class="button" href="#download">Mac용 다운로드</a>
+<p class="state"><span class="lamp on breathe"></span>온라인</p>
+<div class="chain" role="img" aria-label="이 Mac에서 cloudflared와 Cloudflare를 거쳐 공개 주소까지 이어지는 링크입니다. 네 구간이 모두 정상입니다.">
+<div class="node on"><span class="ring"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><rect x="3" y="3.5" width="10" height="7" rx="1.3"/><path d="M 1.5 12.5h13"/></svg></span><b>이 Mac</b><small>localhost:5000</small></div>
+<span class="wire lit"></span>
+<div class="node on"><span class="ring"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M 2.5 13V8a5.5 5.5 0 0 1 11 0v5"/><path d="M 6 13V9a2 2 0 0 1 4 0v4"/></svg></span><b>cloudflared</b><small>실행 중</small></div>
+<span class="wire lit"></span>
+<div class="node on"><span class="ring"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M 4.6 12.5h6.9a2.9 2.9 0 0 0 .3-5.8A4 4 0 0 0 4.1 7.3a2.6 2.6 0 0 0 .5 5.2z"/></svg></span><b>Cloudflare</b><small>연결 4개</small></div>
+<span class="wire lit"></span>
+<div class="node on"><span class="ring"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="8" cy="8" r="6"/><path d="M 2 8h12M8 2c2 2 2 10 0 12M8 2c-2 2-2 10 0 12"/></svg></span><b>공개</b><small>nas.example.com</small></div>
+</div>
+</section>
+
+<section class="carousel wrap" aria-roledescription="carousel" aria-label="스크린샷">
+<div class="slides" tabindex="0">
+<figure class="slide main" id="shot-main" aria-roledescription="slide" aria-label="1 / 5"><div class="frame"><picture><source srcset="/img/app-ko-main-dark.webp" media="(prefers-color-scheme: dark)" width="2000" height="1309"><img src="/img/app-ko-main-light.webp" width="2000" height="1309" alt="Loggia 메인 창: 링크 카드는 온라인을 표시하고, 사이드바에는 서비스 5개가 있으며 그중 2개가 공개되어 있습니다. 오른쪽에는 공개된 ‘NAS 패널’의 세부 정보가 열려 있습니다." decoding="async"></picture></div><figcaption><b>모든 서비스를 한 창에서</b> 각 서비스가 작동하는지 한눈에 보고, 바로 열 수 있습니다.</figcaption></figure>
+<figure class="slide link" id="shot-link" aria-roledescription="slide" aria-label="2 / 5"><div class="frame"><picture><source srcset="/img/app-ko-link-dark.webp" media="(prefers-color-scheme: dark)" width="2000" height="1309"><img src="/img/app-ko-link-light.webp" width="2000" height="1309" alt="링크 세부 정보, 일부 정상: 이 Mac에서 Grafana가 응답하지 않습니다. 나머지 구간은 정상이며, 포트 3000에서 대기 중인 프로그램이 없다는 설명과 ‘서비스 보기’ 버튼이 있습니다." loading="lazy" decoding="async"></picture></div><figcaption><b>끊기면 어디서 끊겼는지 알려 줍니다</b> 링크를 네 구간으로 나눠 확인하고, 끊어진 구간과 고치는 버튼을 보여 줍니다.</figcaption></figure>
+<figure class="slide publish" id="shot-publish" aria-roledescription="slide" aria-label="3 / 5"><div class="frame"><picture><source srcset="/img/app-ko-publish-dark.webp" media="(prefers-color-scheme: dark)" width="2000" height="1309"><img src="/img/app-ko-publish-light.webp" width="2000" height="1309" alt="공개 직후 Jupyter의 세부 정보: ‘인터넷에 공개’가 켜져 있고 jupyter.example.com에 접속할 수 있습니다." loading="lazy" decoding="async"></picture></div><figcaption><b>스위치 하나로 공개</b> ‘인터넷에 공개’를 켜고 도메인을 고르면 로컬 포트에 HTTPS 주소가 생깁니다.</figcaption></figure>
+<figure class="slide access" id="shot-access" aria-roledescription="slide" aria-label="4 / 5"><div class="frame"><picture><source srcset="/img/app-ko-access-dark.webp" media="(prefers-color-scheme: dark)" width="2000" height="1309"><img src="/img/app-ko-access-light.webp" width="2000" height="1309" alt="NAS 패널의 접근 보호: &#x27;접속 전 이메일 확인&#x27;이 켜져 있고, 허용된 이메일이 두 개 등록되어 있으며, 로그인 유효 기간이 설정되어 있습니다." loading="lazy" decoding="async"></picture></div><figcaption><b>이메일 코드로 보호하세요</b> 접근 보호를 켜고 열 수 있는 사람의 이메일을 등록하세요. 방문자는 먼저 이메일을 확인합니다. Pro 기능입니다.</figcaption></figure>
+<figure class="slide panel" id="shot-panel" aria-roledescription="slide" aria-label="5 / 5"><div class="frame"><picture><source srcset="/img/app-ko-panel-dark.webp" media="(prefers-color-scheme: dark)" width="680" height="546"><img src="/img/app-ko-panel-light.webp" width="680" height="546" alt="메뉴 막대 패널: 링크는 온라인이며 서비스 5개와 상태가 나열되어 있습니다." loading="lazy" decoding="async"></picture></div><figcaption><b>메뉴 막대에서 언제든 확인</b> 창을 열지 않아도 메뉴 막대에서 각 서비스의 상태를 볼 수 있습니다.</figcaption></figure>
+</div>
+<div class="carousel-nav"><button type="button" class="prev" aria-label="이전" hidden><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M 10 3 5 8l5 5"/></svg></button><span class="dots"><a href="#shot-main" aria-label="모든 서비스를 한 창에서" aria-current="true"></a><a href="#shot-link" aria-label="끊기면 어디서 끊겼는지 알려 줍니다"></a><a href="#shot-publish" aria-label="스위치 하나로 공개"></a><a href="#shot-access" aria-label="이메일 코드로 보호하세요"></a><a href="#shot-panel" aria-label="메뉴 막대에서 언제든 확인"></a></span><button type="button" class="next" aria-label="다음" hidden><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m6 3 5 5-5 5"/></svg></button></div>
+</section>
+
+<section class="section wrap" id="lamps">
+<h2>서비스마다 램프가 있습니다.</h2>
+<p class="lead">모양으로 상태를 알려 주므로 색에 의존하지 않고도 읽을 수 있습니다.</p>
+<div class="lamps">
+<div><span class="lamp on"></span><h3>온라인</h3><p>공개 주소로 접속할 수 있습니다.</p></div>
+<div><span class="lamp warn"></span><h3>일부 정상</h3><p>예를 들어 새 도메인 레코드가 아직 적용되지 않은 경우입니다.</p></div>
+<div><span class="lamp error"></span><h3>접속 불가</h3><p>링크의 일부가 끊어졌습니다. Loggia가 어느 부분인지 알려 줍니다.</p></div>
+<div><span class="lamp off"></span><h3>이 Mac에서만</h3><p>공개하지 않은 상태입니다. 오류가 아닙니다.</p></div>
+</div>
+</section>
+
+
+<section class="section wrap" id="account">
+<h2>내 계정만 사용합니다.</h2>
+<div class="facts">
+<div><h3>중간 서버 없음</h3><p>Loggia는 내 Cloudflare 계정에서 동작하며, 중간에 제3자 서버가 없습니다.</p></div>
+<div><h3>토큰은 Mac에만 저장</h3><p>API 토큰은 Mac의 키체인에 보관되며 Cloudflare에만 전송됩니다.</p></div>
+<div><h3>앱에 분석 도구 없음, 가입 없음</h3><p>설정과 서비스 목록은 Mac에 남습니다. Pro를 활성화할 때만 사용자에 관한 정보가 전송되며, 라이선스 키와 기기 이름표가 Dodo Payments로 갑니다. <a href="/ko/privacy">개인정보 처리방침</a>을 참고하십시오.</p></div>
+<div><h3>지정한 사람만 접속</h3><p>서비스에 접근 보호를 켜면, 방문자는 허용한 이메일로 받은 일회용 코드로 로그인합니다.</p></div>
+</div>
+</section>
+
+<section class="section wrap" id="how">
+<h2>세 단계로 설정합니다.</h2>
+<ol class="steps">
+<li><h3>Cloudflare API 토큰 붙여넣기</h3><p>“Cloudflare에서 토큰 만들기”를 누르면 권한이 미리 선택된 템플릿이 열립니다.</p></li>
+<li><h3>Loggia가 런타임 준비</h3><p>Cloudflare의 cloudflared를 다운로드하고 계속 실행되도록 관리합니다.</p></li>
+<li><h3>서비스를 추가하고 공개</h3><p>로컬 포트를 고른 다음 ‘인터넷에 공개’을 켜고 도메인을 선택합니다.</p></li>
+</ol>
+</section>
+
+<section class="section wrap download" id="download" data-version="버전 {v} · macOS {os} 이상" data-version-no-os="버전 {v}" data-button="Loggia {v} 다운로드" data-error="지금은 다운로드할 수 없습니다. 잠시 후 다시 시도하십시오.">
+<h2>Loggia 다운로드</h2>
+<p class="lead">다운로드 버전은 무료 버전입니다. Pro는 구독이 아닌 일회성 구매입니다.</p>
+<p class="status" id="status">macOS&nbsp;26 이상용입니다.</p>
+<div class="actions">
+<a class="button" id="download-button" href="#" hidden>다운로드</a>
+<a class="button secondary" id="buy-button" href="https://checkout.dodopayments.com/buy/pdt_0NpQI1RCtsxAnPDY5N5xH" rel="noopener">Pro 구매</a>
+</div>
+<p class="official"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M 8 1.5 2.5 3.5v4c0 3.3 2.3 6 5.5 7 3.2-1 5.5-3.7 5.5-7v-4z"/><path d="m5.5 8 1.8 1.8L10.7 6.4"/></svg><span>공식 다운로드는 <strong translate="no">useloggia.com</strong>에서만 제공됩니다. 다른 곳의 설치 파일은 변조되었을 수 있습니다.</span></p>
+<noscript><p class="note">최신 버전을 보려면 JavaScript를 켜십시오.</p></noscript>
+<p class="note">결제는 Dodo Payments가 처리하며, 라이선스 키는 이메일로 전달됩니다.</p>
+<p class="checksum" id="checksum" hidden><span id="sha"></span><br>확인하려면 다운로드한 파일에 <code>shasum -a 256</code>을 실행한 결과와 비교하십시오.</p>
+
+<div class="plans-wrap" id="pricing">
+<table class="plans">
+<thead><tr><th scope="col"><span class="visually-hidden">기능</span></th><th scope="col">무료</th><th scope="col">Pro</th></tr></thead>
+<tbody>
+<tr><th scope="row">가격</th><td>무료</td><td>19달러, 1회 결제(출시 기념 가격)</td></tr>
+<tr><th scope="row">이 Mac의 서비스</th><td>무제한</td><td>무제한</td></tr>
+<tr><th scope="row">인터넷에 공개하는 서비스</th><td>최대 2개</td><td>무제한</td></tr>
+<tr><th scope="row">이메일 코드 기반 접근 보호</th><td><span aria-label="포함되지 않음">-</span></td><td>포함</td></tr>
+<tr><th scope="row">링크 진단 및 정리</th><td>포함</td><td>포함</td></tr>
+</tbody>
+</table>
+<p class="terms">Pro를 구매하면 라이선스 키를 받습니다. 설정 › 라이선스에 입력하면 업그레이드됩니다. 라이선스 하나로 Mac 2대에서 사용할 수 있으며 모든 1.x 버전을 사용할 수 있습니다. 구매 후 14일 이내의 환불은 <a href="/ko/refund">환불 정책</a>을 참고하십시오.</p>
+</div>
+
+<p class="install">dmg를 열고 Loggia를 응용 프로그램 폴더로 드래그한 다음, 실행해서 안내에 따라 설정합니다. Cloudflare 계정과 Cloudflare에서 관리하는 도메인이 필요합니다. 궁금한 점은 <a href="/ko/faq">자주 묻는 질문</a>을 참고하십시오.</p>
+</section>
+</main>
+<footer class="site-footer"><div class="wrap"><div class="foot-brand"><a class="brand" translate="no" href="/ko/"><img src="/icon.svg" alt="">Loggia</a><p>Mac의 서비스를 인터넷에 안전하게 공개합니다.</p></div><nav class="foot-cols" aria-label="Loggia"><div><h2>제품</h2><a href="#download">다운로드</a><a href="#pricing">가격</a></div><div><h2>지원</h2><a href="/ko/support">지원팀에 문의</a><a href="/ko/faq">자주 묻는 질문</a><a href="/ko/changelog">변경 사항</a></div><div><h2>법적 고지</h2><a href="/ko/privacy">개인정보 처리방침</a><a href="/ko/terms">이용약관</a><a href="/ko/refund">환불 정책</a></div><div><h2>문의</h2><a href="mailto:support@useloggia.com">support<wbr>@useloggia.com</a></div></nav><div class="foot-bottom"><span>© 2026 ydongy. All rights reserved.</span><span>공식 다운로드는 <strong translate="no">useloggia.com</strong>에서만 제공됩니다. 다른 곳의 설치 파일은 변조되었을 수 있습니다.</span></div><nav class="langs" aria-label="언어"><a href="/" hreflang="en" lang="en" data-lang="en">English</a><a href="/zh/" hreflang="zh-CN" lang="zh-CN" data-lang="zh">简体中文</a><a href="/zh-hant/" hreflang="zh-Hant" lang="zh-Hant" data-lang="zh-hant">繁體中文</a><a href="/ja/" hreflang="ja" lang="ja" data-lang="ja">日本語</a><a href="/ko/" hreflang="ko" lang="ko" data-lang="ko" aria-current="true">한국어</a><a href="/fr/" hreflang="fr" lang="fr" data-lang="fr">Français</a><a href="/de/" hreflang="de" lang="de" data-lang="de">Deutsch</a><a href="/es/" hreflang="es" lang="es" data-lang="es">Español</a><a href="/pt/" hreflang="pt-BR" lang="pt-BR" data-lang="pt">Português</a></nav></div></footer>
+</body>
+</html>

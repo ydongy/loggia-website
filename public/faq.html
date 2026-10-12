@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Loggia FAQ</title>
+<meta name="description" content="Answers to common questions about Loggia: requirements, Cloudflare token permissions, access protection, proxies, updates and uninstalling.">
+<link rel="alternate" hreflang="en" href="https://useloggia.com/faq">
+<link rel="alternate" hreflang="zh-CN" href="https://useloggia.com/zh/faq">
+<link rel="alternate" hreflang="zh-Hant" href="https://useloggia.com/zh-hant/faq">
+<link rel="alternate" hreflang="ja" href="https://useloggia.com/ja/faq">
+<link rel="alternate" hreflang="ko" href="https://useloggia.com/ko/faq">
+<link rel="alternate" hreflang="fr" href="https://useloggia.com/fr/faq">
+<link rel="alternate" hreflang="de" href="https://useloggia.com/de/faq">
+<link rel="alternate" hreflang="es" href="https://useloggia.com/es/faq">
+<link rel="alternate" hreflang="pt-BR" href="https://useloggia.com/pt/faq">
+<link rel="alternate" hreflang="x-default" href="https://useloggia.com/faq">
+<link rel="canonical" href="https://useloggia.com/faq">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Loggia">
+<meta property="og:title" content="Loggia FAQ">
+<meta property="og:description" content="Answers to common questions about Loggia: requirements, Cloudflare token permissions, access protection, proxies, updates and uninstalling.">
+<meta property="og:url" content="https://useloggia.com/faq">
+<meta property="og:image" content="https://useloggia.com/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#f7f8f7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0e1211" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/style.css">
+<script src="/lang.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><div class="wrap"><a class="brand" translate="no" href="/"><img src="/icon.svg" alt="">Loggia</a><nav><a href="/#download">Download</a><a href="/#pricing">Pricing</a><a href="/faq" aria-current="page">FAQ</a><details class="lang-menu"><summary aria-label="Language"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.25"/><path d="M 1.75 8h12.5M8 1.75c1.7 1.8 2.5 3.9 2.5 6.25S9.7 12.45 8 14.25C6.3 12.45 5.5 10.35 5.5 8S6.3 3.55 8 1.75z"/></svg><span>English</span></summary><ul><li><a href="/faq" hreflang="en" lang="en" data-lang="en" aria-current="true">English</a></li><li><a href="/zh/faq" hreflang="zh-CN" lang="zh-CN" data-lang="zh">简体中文</a></li><li><a href="/zh-hant/faq" hreflang="zh-Hant" lang="zh-Hant" data-lang="zh-hant">繁體中文</a></li><li><a href="/ja/faq" hreflang="ja" lang="ja" data-lang="ja">日本語</a></li><li><a href="/ko/faq" hreflang="ko" lang="ko" data-lang="ko">한국어</a></li><li><a href="/fr/faq" hreflang="fr" lang="fr" data-lang="fr">Français</a></li><li><a href="/de/faq" hreflang="de" lang="de" data-lang="de">Deutsch</a></li><li><a href="/es/faq" hreflang="es" lang="es" data-lang="es">Español</a></li><li><a href="/pt/faq" hreflang="pt-BR" lang="pt-BR" data-lang="pt">Português</a></li></ul></details></nav></div></header>
+<main id="main" class="wrap narrow page">
+<article>
+<h1>Frequently asked questions</h1>
+<p class="lead">Can’t find your answer? The app itself tells you what is wrong and which button fixes it. Open the service or link details first.</p>
+
+<h2 id="basics">Basics</h2>
+<details class="qa" id="free"><summary>Is Loggia free?</summary><div><p>The free plan is. It can publish up to 2 services to the internet and can’t turn on new access protection. Pro removes these limits, as a one-time purchase. See <a href="/#pricing">Pricing</a>.</p></div></details>
+<details class="qa" id="requirements"><summary>What do I need?</summary><div><p>A Mac with macOS&nbsp;26 or later, a Cloudflare account, and at least one domain managed by Cloudflare.</p></div></details>
+<details class="qa" id="cloudflare-cost"><summary>Do I have to pay Cloudflare?</summary><div><p>Publishing uses Cloudflare Tunnel, which is free. Access protection needs Zero Trust set up on your account, and the free plan is enough. Your domain is billed by its registrar as usual.</p></div></details>
+<details class="qa" id="mac-on"><summary>Does my Mac have to stay on?</summary><div><p>Yes. Your services keep running on your Mac; Loggia only gives them a public address. While the Mac is asleep, off or offline, the address can’t be reached. The connector starts at login, so services come back as soon as your Mac does.</p></div></details>
+<details class="qa" id="traffic"><summary>Does my traffic go through your servers?</summary><div><p>No. Visitors reach your services through Cloudflare, straight to your Mac. Loggia has no servers of its own and does not see your traffic. See the <a href="/privacy">Privacy Policy</a>.</p></div></details>
+
+<h2 id="cloudflare">Cloudflare and the API token</h2>
+<details class="qa" id="token-permissions"><summary>Which permissions does the API token need?</summary><div>
+<p>In onboarding or in Settings › Cloudflare, click <b>Create a Token on Cloudflare</b>. It opens a template with the permissions already selected, so you only need to confirm it. The template includes:</p>
+<table>
+<tr><td>Account › Cloudflare Tunnel › Edit</td><td>Required</td></tr>
+<tr><td>Zone › DNS › Edit</td><td>Required. Zone Resources can be limited to the domains you use.</td></tr>
+<tr><td>Account › Access: Apps and Policies › Edit</td><td>Optional, for access protection</td></tr>
+<tr><td>Account › Access: Organizations, Identity Providers, and Groups › Edit</td><td>Optional, lets Loggia set up the email-code login for you</td></tr>
+</table>
+<p>Settings › Cloudflare lists each permission and has <b>Copy Permission List</b> if you prefer to create the token yourself. The token is stored only in your Mac’s keychain.</p>
+</div></details>
+<details class="qa" id="permission-delay"><summary>I just fixed the token’s permissions, but Loggia still says they’re missing.</summary><div><p>Changes on Cloudflare take a minute or two to take effect. Wait a moment, then click <b>Check Again</b> in Settings › Cloudflare.</p></div></details>
+<details class="qa" id="access-protection"><summary>Why can’t I turn on access protection?</summary><div>
+<ul>
+<li>Access protection is a Pro feature.</li>
+<li>The service has to be published first.</li>
+<li>The token needs both Access permissions listed above.</li>
+<li>Your Cloudflare account needs Zero Trust set up. The free plan is enough. Once it is set up, click <b>Check Again</b> in Settings › Cloudflare.</li>
+</ul>
+</div></details>
+<details class="qa" id="who-can-open"><summary>With access protection on, who can open my service?</summary><div><p>Only the email addresses you list, or everyone at a domain if you add <code>@example.com</code>. Visitors get a one-time code by email. A login lasts 24 hours by default, and you can change that.</p></div></details>
+<details class="qa" id="existing-domain"><summary>Will Loggia overwrite a domain I already use?</summary><div><p>Not silently. If the domain already points somewhere else, Loggia stops and asks you before changing anything.</p></div></details>
+
+<h2 id="pro">Pro and licenses</h2>
+<details class="qa" id="devices"><summary>How many Macs can use one license?</summary><div><p>Two. To use it on a different Mac, first click <b>Deactivate</b> in Settings › License on one of the Macs that has it.</p></div></details>
+<details class="qa" id="offline"><summary>Does Pro need an internet connection?</summary><div><p>Activating needs one. After that Loggia checks the license once a day. If it can’t reach the license server, Pro keeps working for 30 days after the last successful check, and comes back on its own once the Mac is online again.</p></div></details>
+<details class="qa" id="updates-included"><summary>Which versions does a license cover?</summary><div><p>All 1.x versions. Updates themselves are free on both plans.</p></div></details>
+<details class="qa" id="refund"><summary>Can I get a refund?</summary><div><p>Yes, within 14 days of buying. The <a href="/refund">Refund Policy</a> says how to ask and what happens to your license.</p></div></details>
+<details class="qa" id="after-refund"><summary>What happens after a refund, or if a license stops being valid?</summary><div><p>Loggia goes back to the free plan, and nothing is taken offline: services you published keep running. The free plan manages only the first 2 published services in your list. The others keep running, but Loggia stops checking them and shows them as <b>Not managed</b>; you can still stop publishing them. Access protection that is already on keeps working; you can turn it off but not change it. Upgrading to Pro again restores everything.</p></div></details>
+
+<h2 id="troubleshooting">Troubleshooting</h2>
+<details class="qa" id="service-down"><summary>A service shows as down. Where do I start?</summary><div><p>Open the service. Loggia shows which part of the link is broken (your local service, the domain record, the connector on your Mac, or Cloudflare), why, and the button that fixes it. A new domain record can take a few minutes to take effect.</p></div></details>
+<details class="qa" id="proxy"><summary>Loggia says a proxy app is intercepting the connection.</summary><div><p>In enhanced or TUN mode with fake IP, a proxy app answers for <code>argotunnel.com</code> with fake addresses, so cloudflared keeps at most two connections to Cloudflare, or none. When cloudflared can’t reach Cloudflare, Loggia checks for this and only then names a proxy app. In the proxy app:</p>
+<ol>
+<li>Route <code>argotunnel.com</code> and <code>cftunnel.com</code> directly.</li>
+<li>Add <code>+.argotunnel.com</code> to the fake-IP filter (<code>fake-ip-filter</code>), so it resolves to Cloudflare’s real addresses. In fake-IP mode a direct rule alone is not enough.</li>
+<li>Click <b>Reconnect</b>, <b>Try Again</b> or <b>Restart</b>, whichever Loggia shows.</li>
+</ol>
+<p>The status of your public services is checked from the internet and is not affected by the proxy app. If a domain you just published opens elsewhere but not on this Mac, the proxy app may remember it as missing for up to half an hour: add the domain to the fake-IP filter too, or clear the proxy app’s DNS cache.</p></div></details>
+<details class="qa" id="connector"><summary>Where can I see what the connector is doing?</summary><div><p>Settings › Connector shows whether cloudflared is installed and running, its version and last exit code, and its log. If something keeps failing, you can export diagnostics there.</p></div></details>
+
+<h2 id="updates">Updates and uninstalling</h2>
+<details class="qa" id="update"><summary>How do I update Loggia?</summary><div><p>Loggia checks for a new version once a day. When there is one, it shows what changed and can download it, install it and relaunch for you. To check right away, click <b>Check for Updates</b> in Settings › About; to stop the daily check, turn off <b>Check for updates automatically</b> there. Your settings and services are kept, and updates are free on both plans. The <a href="/changelog">changelog</a> lists what changed in each version.</p></div></details>
+<details class="qa" id="uninstall"><summary>How do I uninstall Loggia completely?</summary><div>
+<ol>
+<li>In Settings › Cloudflare, click <b>Remove Everything…</b> to delete Loggia’s domain records, routes and access protection from Cloudflare.</li>
+<li>Quit Loggia and move it from Applications to the Trash.</li>
+<li>In Terminal, run <code>launchctl bootout gui/$(id -u)/com.useloggia.app.cloudflared</code>, then delete <code>~/Library/Application Support/Loggia</code>, <code>~/Library/Logs/Loggia</code> and <code>~/Library/LaunchAgents/com.useloggia.app.cloudflared.plist</code>.</li>
+<li>Delete the “Loggia” items in Keychain Access.</li>
+</ol>
+</div></details>
+</article>
+</main>
+<footer class="site-footer"><div class="wrap"><div class="foot-brand"><a class="brand" translate="no" href="/"><img src="/icon.svg" alt="">Loggia</a><p>Put the services on your Mac on the internet, safely.</p></div><nav class="foot-cols" aria-label="Loggia"><div><h2>Product</h2><a href="/#download">Download</a><a href="/#pricing">Pricing</a></div><div><h2>Support</h2><a href="/support">Contact support</a><a href="/faq">FAQ</a><a href="/changelog">Changelog</a></div><div><h2>Legal</h2><a href="/privacy">Privacy Policy</a><a href="/terms">Terms of Service</a><a href="/refund">Refund Policy</a></div><div><h2>Contact</h2><a href="mailto:support@useloggia.com">support<wbr>@useloggia.com</a></div></nav><div class="foot-bottom"><span>© 2026 ydongy. All rights reserved.</span><span>Official downloads are only on <strong translate="no">useloggia.com</strong>. Installers from anywhere else may have been tampered with.</span></div><nav class="langs" aria-label="Language"><a href="/faq" hreflang="en" lang="en" data-lang="en" aria-current="true">English</a><a href="/zh/faq" hreflang="zh-CN" lang="zh-CN" data-lang="zh">简体中文</a><a href="/zh-hant/faq" hreflang="zh-Hant" lang="zh-Hant" data-lang="zh-hant">繁體中文</a><a href="/ja/faq" hreflang="ja" lang="ja" data-lang="ja">日本語</a><a href="/ko/faq" hreflang="ko" lang="ko" data-lang="ko">한국어</a><a href="/fr/faq" hreflang="fr" lang="fr" data-lang="fr">Français</a><a href="/de/faq" hreflang="de" lang="de" data-lang="de">Deutsch</a><a href="/es/faq" hreflang="es" lang="es" data-lang="es">Español</a><a href="/pt/faq" hreflang="pt-BR" lang="pt-BR" data-lang="pt">Português</a></nav></div></footer>
+</body>
+</html>

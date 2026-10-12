@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024"  viewBox="0 0 1024 1024"><defs>
+      <clipPath id="sqexport-light"><path d="M230 0h564c127 0 230 103 230 230v564c0 127-103 230-230 230H230C103 1024 0 921 0 794V230C0 103 103 0 230 0Z"/></clipPath>
+      <clipPath id="inexport-light"><path d="M279.6 797.92V482.52A232.39999999999998 232.39999999999998 0 0 1 744.4 482.52V797.92Z"/></clipPath>
+      <radialGradient id="ltexport-light" gradientUnits="userSpaceOnUse" cx="512" cy="645.884" r="228.75999999999993">
+        <stop offset="0" stop-color="#F4FFF9"/><stop offset=".35" stop-color="#96e4c7"/><stop offset="1" stop-color="#22C489"/></radialGradient>
+      <radialGradient id="blexport-light" gradientUnits="userSpaceOnUse" cx="512" cy="645.884" r="330">
+        <stop offset="0" stop-color="#34D399" stop-opacity=".55"/><stop offset=".5" stop-color="#34D399" stop-opacity=".16"/><stop offset="1" stop-color="#34D399" stop-opacity="0"/></radialGradient>
+      <radialGradient id="fsexport-light" gradientUnits="userSpaceOnUse" cx="512" cy="836" r="300" gradientTransform="translate(0 836) scale(1 .16) translate(0 -836)">
+        <stop offset="0" stop-color="#34D399" stop-opacity=".45"/><stop offset="1" stop-color="#34D399" stop-opacity="0"/></radialGradient></defs>
+      <g clip-path="url(#sqexport-light)">
+        <rect width="1024" height="1024" fill="#123A33"/>
+        <ellipse cx="512" cy="836" rx="330" ry="56" fill="url(#fsexport-light)"/>
+        <path d="M232 836V456A280 280 0 0 1 792 456V836Z" fill="#ede7da"/><path d="M279.6 797.92V482.52A232.39999999999998 232.39999999999998 0 0 1 744.4 482.52V797.92Z" fill="#9aa197"/><path d="M321.6 764.32V505.91999999999996A190.39999999999998 190.39999999999998 0 0 1 702.4 505.91999999999996V764.32Z" fill="#5c6e65"/><path d="M358 735.2V526.2A154 154 0 0 1 666 526.2V735.2Z" fill="#243f38"/>
+        <g clip-path="url(#inexport-light)"><rect x="0" y="0" width="1024" height="1024" fill="url(#blexport-light)"/></g>
+        <path d="M391.6 708.3199999999999V544.92A120.39999999999998 120.39999999999998 0 0 1 632.4 544.92V708.3199999999999Z" fill="url(#ltexport-light)"/>
+      </g></svg>

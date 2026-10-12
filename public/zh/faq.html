@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Loggia 常见问题</title>
+<meta name="description" content="关于 Loggia 的常见问题：系统要求、Cloudflare Token 权限、访问保护、代理软件、更新与卸载。">
+<link rel="alternate" hreflang="en" href="https://useloggia.com/faq">
+<link rel="alternate" hreflang="zh-CN" href="https://useloggia.com/zh/faq">
+<link rel="alternate" hreflang="zh-Hant" href="https://useloggia.com/zh-hant/faq">
+<link rel="alternate" hreflang="ja" href="https://useloggia.com/ja/faq">
+<link rel="alternate" hreflang="ko" href="https://useloggia.com/ko/faq">
+<link rel="alternate" hreflang="fr" href="https://useloggia.com/fr/faq">
+<link rel="alternate" hreflang="de" href="https://useloggia.com/de/faq">
+<link rel="alternate" hreflang="es" href="https://useloggia.com/es/faq">
+<link rel="alternate" hreflang="pt-BR" href="https://useloggia.com/pt/faq">
+<link rel="alternate" hreflang="x-default" href="https://useloggia.com/faq">
+<link rel="canonical" href="https://useloggia.com/zh/faq">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Loggia">
+<meta property="og:title" content="Loggia 常见问题">
+<meta property="og:description" content="关于 Loggia 的常见问题：系统要求、Cloudflare Token 权限、访问保护、代理软件、更新与卸载。">
+<meta property="og:url" content="https://useloggia.com/zh/faq">
+<meta property="og:image" content="https://useloggia.com/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#f7f8f7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0e1211" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/style.css">
+<script src="/lang.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">跳到正文</a>
+<header class="site-header"><div class="wrap"><a class="brand" translate="no" href="/zh/"><img src="/icon.svg" alt="">Loggia</a><nav><a href="/zh/#download">下载</a><a href="/zh/#pricing">价格</a><a href="/zh/faq" aria-current="page">常见问题</a><details class="lang-menu"><summary aria-label="语言"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.25"/><path d="M 1.75 8h12.5M8 1.75c1.7 1.8 2.5 3.9 2.5 6.25S9.7 12.45 8 14.25C6.3 12.45 5.5 10.35 5.5 8S6.3 3.55 8 1.75z"/></svg><span>简体中文</span></summary><ul><li><a href="/faq" hreflang="en" lang="en" data-lang="en">English</a></li><li><a href="/zh/faq" hreflang="zh-CN" lang="zh-CN" data-lang="zh" aria-current="true">简体中文</a></li><li><a href="/zh-hant/faq" hreflang="zh-Hant" lang="zh-Hant" data-lang="zh-hant">繁體中文</a></li><li><a href="/ja/faq" hreflang="ja" lang="ja" data-lang="ja">日本語</a></li><li><a href="/ko/faq" hreflang="ko" lang="ko" data-lang="ko">한국어</a></li><li><a href="/fr/faq" hreflang="fr" lang="fr" data-lang="fr">Français</a></li><li><a href="/de/faq" hreflang="de" lang="de" data-lang="de">Deutsch</a></li><li><a href="/es/faq" hreflang="es" lang="es" data-lang="es">Español</a></li><li><a href="/pt/faq" hreflang="pt-BR" lang="pt-BR" data-lang="pt">Português</a></li></ul></details></nav></div></header>
+<main id="main" class="wrap narrow page">
+<article>
+<h1>常见问题</h1>
+<p class="lead">没找到答案？App 会直接告诉你哪里出了问题、点哪个按钮能修好，先打开服务或链路详情看看。</p>
+
+<h2 id="basics">基本</h2>
+<details class="qa" id="free"><summary>Loggia 免费吗？</summary><div><p>免费版免费，最多可以公开 2 个服务到互联网，但不能新开访问保护。Pro 取消这些限制，一次买断。详见<a href="/zh/#pricing">价格</a>。</p></div></details>
+<details class="qa" id="requirements"><summary>需要准备什么？</summary><div><p>一台 macOS&nbsp;26 或更高版本的 Mac、一个 Cloudflare 账户，以及至少一个由 Cloudflare 托管的域名。</p></div></details>
+<details class="qa" id="cloudflare-cost"><summary>需要给 Cloudflare 付费吗？</summary><div><p>公开服务用的是 Cloudflare Tunnel，它是免费的。访问保护需要账户开通 Zero Trust，免费套餐就够用。域名照常由注册商收费。</p></div></details>
+<details class="qa" id="mac-on"><summary>Mac 需要一直开着吗？</summary><div><p>需要。服务一直运行在你的 Mac 上，Loggia 只是给它们一个公网地址。Mac 睡眠、关机或断网时，地址就访问不到。连接器会在登录时自动启动，Mac 恢复后服务也随之恢复。</p></div></details>
+<details class="qa" id="traffic"><summary>访问流量会经过你们的服务器吗？</summary><div><p>不会。访客通过 Cloudflare 直接访问你 Mac 上的服务。Loggia 没有自己的服务器，也看不到你的流量。详见<a href="/zh/privacy">隐私政策</a>。</p></div></details>
+
+<h2 id="cloudflare">Cloudflare 与 API 令牌</h2>
+<details class="qa" id="token-permissions"><summary>API 令牌需要哪些权限？</summary><div>
+<p>在引导或「设置 › Cloudflare」里点 <b>在 Cloudflare 创建 Token</b>，会打开一个已经勾好权限的模板，直接确认即可。模板包含：</p>
+<table>
+<tr><td>Account › Cloudflare Tunnel › Edit</td><td>必需</td></tr>
+<tr><td>Zone › DNS › Edit</td><td>必需。Zone Resources 可以只选要用的域名。</td></tr>
+<tr><td>Account › Access: Apps and Policies › Edit</td><td>可选，用于访问保护</td></tr>
+<tr><td>Account › Access: Organizations, Identity Providers, and Groups › Edit</td><td>可选，让 Loggia 自动设置邮箱验证码登录</td></tr>
+</table>
+<p>如果想自己创建令牌，「设置 › Cloudflare」里逐项列出了权限，并提供 <b>复制权限清单</b>。令牌只保存在 Mac 的钥匙串里。</p>
+</div></details>
+<details class="qa" id="permission-delay"><summary>刚在 Cloudflare 补了权限，Loggia 还是提示缺少权限。</summary><div><p>Cloudflare 上的改动要一两分钟才生效。稍等片刻，再到「设置 › Cloudflare」点 <b>重新检查</b>。</p></div></details>
+<details class="qa" id="access-protection"><summary>为什么开不了访问保护？</summary><div>
+<ul>
+<li>访问保护是 Pro 功能。</li>
+<li>服务要先公开，才能开启访问保护。</li>
+<li>令牌需要带上面列出的两项 Access 权限。</li>
+<li>Cloudflare 账户需要开通 Zero Trust，免费套餐就够用。开通后到「设置 › Cloudflare」点 <b>重新检查</b>。</li>
+</ul>
+</div></details>
+<details class="qa" id="who-can-open"><summary>开启访问保护后，谁能打开我的服务？</summary><div><p>只有你列出的邮箱；添加 <code>@example.com</code> 则允许该域名下的所有邮箱。访客会通过邮件收到一次性验证码。登录默认有效 24 小时，可以调整。</p></div></details>
+<details class="qa" id="existing-domain"><summary>Loggia 会覆盖我正在使用的域名吗？</summary><div><p>不会悄悄覆盖。如果域名已经指向别处，Loggia 会停下来，先征得你的同意再做改动。</p></div></details>
+
+<h2 id="pro">Pro 与许可</h2>
+<details class="qa" id="devices"><summary>一个授权码能用在几台 Mac 上？</summary><div><p>两台。想换到另一台 Mac，先在已激活的其中一台上，到「设置 › 许可」点 <b>取消激活</b>。</p></div></details>
+<details class="qa" id="offline"><summary>Pro 需要联网吗？</summary><div><p>激活时需要。之后 Loggia 每天验证一次授权；连不上授权服务器时，Pro 从上次验证成功起还能继续用 30 天，Mac 联网后会自动恢复。</p></div></details>
+<details class="qa" id="updates-included"><summary>授权码覆盖哪些版本？</summary><div><p>1.x 的全部版本。更新本身对免费版和 Pro 都是免费的。</p></div></details>
+<details class="qa" id="refund"><summary>可以退款吗？</summary><div><p>可以，购买后 14 天内。<a href="/zh/refund">退款政策</a>里写明了如何申请，以及授权码会怎样。</p></div></details>
+<details class="qa" id="after-refund"><summary>退款后，或者授权失效后会怎样？</summary><div><p>Loggia 回到免费版，但不会下线任何东西：已经公开的服务继续运行。免费版只管理列表里最早公开的 2 个服务；其余的继续运行，但 Loggia 不再检查它们，并显示为 <b>未管理</b>，你仍然可以停止公开。已经开启的访问保护继续生效，可以关掉，但不能再修改。重新升级到 Pro 后一切恢复。</p></div></details>
+
+<h2 id="troubleshooting">故障排查</h2>
+<details class="qa" id="service-down"><summary>服务显示不在线，从哪里开始查？</summary><div><p>打开这个服务。Loggia 会显示链路的哪一段断了（本地服务、域名记录、Mac 上的连接器，还是 Cloudflare）、原因是什么，以及点哪个按钮能修好。新的域名记录可能要几分钟才生效。</p></div></details>
+<details class="qa" id="proxy"><summary>Loggia 提示有代理软件拦截了连接。</summary><div><p>代理软件在增强模式或 TUN 模式下开着 Fake-IP 时，会给 <code>argotunnel.com</code> 返回假地址，cloudflared 到 Cloudflare 最多只能保持两条连接，甚至连不上。cloudflared 连不上 Cloudflare 时，Loggia 会检查这一点，确认之后才提到代理软件。在代理软件里：</p>
+<ol>
+<li>把 <code>argotunnel.com</code> 和 <code>cftunnel.com</code> 设为直连。</li>
+<li>把 <code>+.argotunnel.com</code> 加入 Fake-IP 过滤（<code>fake-ip-filter</code>），让它解析到 Cloudflare 的真实地址。Fake-IP 模式下只设直连还不够。</li>
+<li>点 Loggia 显示的 <b>重新连接</b>、<b>重试</b> 或 <b>重启</b>。</li>
+</ol>
+<p>公开服务的状态是从外网检查的，不受代理软件影响。如果刚公开的域名在别处能打开、在这台 Mac 上打不开，可能是代理软件把它记成了不存在，最长半小时：把这个域名也加入 Fake-IP 过滤，或者清一次代理软件的 DNS 缓存。</p></div></details>
+<details class="qa" id="connector"><summary>在哪里查看连接器的状态？</summary><div><p>「设置 › 连接器」会显示 cloudflared 是否已安装、是否在运行、版本、上次退出码和日志。如果一直出错，可以在那里导出诊断信息。</p></div></details>
+
+<h2 id="updates">更新与卸载</h2>
+<details class="qa" id="update"><summary>怎么更新 Loggia？</summary><div><p>Loggia 每天自动检查一次新版本。有新版本时，会显示更新内容，并可以帮你下载、安装和重新打开。想马上检查，在「设置 › 关于」里点 <b>检查更新</b>；不想每天自动检查，在同一处关掉 <b>自动检查更新</b>。设置和服务都会保留，免费版和 Pro 都可以免费更新。每个版本改了什么，见<a href="/zh/changelog">更新日志</a>。</p></div></details>
+<details class="qa" id="uninstall"><summary>怎么彻底卸载 Loggia？</summary><div>
+<ol>
+<li>在「设置 › Cloudflare」里点 <b>彻底移除…</b>，先清掉 Loggia 在 Cloudflare 上的域名记录、路由和访问保护。</li>
+<li>退出 Loggia，把它从「应用程序」移到废纸篓。</li>
+<li>在终端运行 <code>launchctl bootout gui/$(id -u)/com.useloggia.app.cloudflared</code>，然后删除 <code>~/Library/Application Support/Loggia</code>、<code>~/Library/Logs/Loggia</code> 和 <code>~/Library/LaunchAgents/com.useloggia.app.cloudflared.plist</code>。</li>
+<li>在「钥匙串访问」里删除「Loggia」条目。</li>
+</ol>
+</div></details>
+</article>
+</main>
+<footer class="site-footer"><div class="wrap"><div class="foot-brand"><a class="brand" translate="no" href="/zh/"><img src="/icon.svg" alt="">Loggia</a><p>把 Mac 上的服务，安全地放到互联网上。</p></div><nav class="foot-cols" aria-label="Loggia"><div><h2>产品</h2><a href="/zh/#download">下载</a><a href="/zh/#pricing">价格</a></div><div><h2>支持</h2><a href="/zh/support">联系支持</a><a href="/zh/faq">常见问题</a><a href="/zh/changelog">更新日志</a></div><div><h2>法律</h2><a href="/zh/privacy">隐私政策</a><a href="/zh/terms">服务条款</a><a href="/zh/refund">退款政策</a></div><div><h2>联系</h2><a href="mailto:support@useloggia.com">support<wbr>@useloggia.com</a></div></nav><div class="foot-bottom"><span>© 2026 ydongy. 保留所有权利。</span><span>官方下载只在 <strong translate="no">useloggia.com</strong>，其他来源的安装包可能被篡改过。</span></div><nav class="langs" aria-label="语言"><a href="/faq" hreflang="en" lang="en" data-lang="en">English</a><a href="/zh/faq" hreflang="zh-CN" lang="zh-CN" data-lang="zh" aria-current="true">简体中文</a><a href="/zh-hant/faq" hreflang="zh-Hant" lang="zh-Hant" data-lang="zh-hant">繁體中文</a><a href="/ja/faq" hreflang="ja" lang="ja" data-lang="ja">日本語</a><a href="/ko/faq" hreflang="ko" lang="ko" data-lang="ko">한국어</a><a href="/fr/faq" hreflang="fr" lang="fr" data-lang="fr">Français</a><a href="/de/faq" hreflang="de" lang="de" data-lang="de">Deutsch</a><a href="/es/faq" hreflang="es" lang="es" data-lang="es">Español</a><a href="/pt/faq" hreflang="pt-BR" lang="pt-BR" data-lang="pt">Português</a></nav></div></footer>
+</body>
+</html>

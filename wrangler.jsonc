@@ -1,0 +1,14 @@
+{
+  // Cloudflare Workers static assets: the worker name must match the project name in the dashboard.
+  "name": "loggia",
+  "compatibility_date": "2026-10-02",
+  "assets": {
+    "directory": "./public",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  },
+  // The custom domain (useloggia.com) is managed in the dashboard (Domains), not here.
+  // Without a `routes` entry wrangler would turn the workers.dev URL on at every deploy, so keep these off.
+  "workers_dev": false,
+  "preview_urls": false
+}
