@@ -1,7 +1,8 @@
 # Contributing
 
 Thanks for helping with the Loggia website. For anything larger than a typo or a one-line fix, open an issue first so
-we can agree on the approach.
+we can agree on the approach. Issues and pull requests may be written in English or Simplified Chinese.
+欢迎用中文或英文提 issue 和 PR。
 
 ## Setup
 

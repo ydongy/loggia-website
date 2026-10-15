@@ -81,7 +81,8 @@ python3 scripts/check_facts.py          # the Facts table in docs/content.md aga
 ```
 
 Commit the regenerated `public/` together with the source change that produces it; CI fails with "public/ is stale" otherwise.
-- Share image: `public/og.png` (1200x630) is rendered from `design/og.html` by `scripts/export-og.sh` (headless Chrome); render it again when the icon or the tagline changes.
+
+Share image: `public/og.png` (1200x630) is rendered from `design/og.html` by `scripts/export-og.sh` (headless Chrome); render it again when the icon or the tagline changes.
 
 ```
 .

@@ -81,7 +81,8 @@ python3 scripts/check_facts.py          # docs/content.md 的 Facts 表与各语
 ```
 
 生成的 `public/` 要和对应的源文件改动一起提交，否则 CI 会报 "public/ is stale"。
-- 分享图 `public/og.png`（1200x630）由 `scripts/export-og.sh` 用无头 Chrome 从 `design/og.html` 渲染；图标或标语变化时需重新生成。
+
+分享图 `public/og.png`（1200x630）由 `scripts/export-og.sh` 用无头 Chrome 从 `design/og.html` 渲染；图标或标语变化时需重新生成。
 
 ```
 .

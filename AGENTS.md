@@ -61,8 +61,28 @@ Conventional Commits for commit messages and PR titles: `feat|fix|docs|refactor|
 (scopes in `docs/contracts.md`). Branch `<type>/<issue>-<slug>`. The maintainer squash-merges. Do not commit or push
 unless asked. Update `CHANGELOG.md` under `## [Unreleased]` for user-visible changes.
 
+## Issues and pull requests
+
+`gh issue create` and `gh pr create --body` skip the issue forms and the pull request template, so write their
+structure yourself. Search open issues first; one issue is one problem.
+
+- Issue title: one short sentence that says the problem or the outcome, in English or Simplified Chinese. No type
+  prefix such as `[feat]`; the label carries the type.
+- Bug, `--label bug`: `## What happened`, `## What you expected`, `## Steps to reproduce`,
+  `## Version and environment` (page address, language, browser and operating system).
+- Feature or improvement, `--label enhancement`: `## Problem`, `## Proposed solution`,
+  `## Alternatives considered` (when there were any), `## Done when`.
+- Documentation, `--label documentation`: `## Where`, `## What is missing, unclear or wrong`, `## Suggested change`.
+- Labels: `accessibility` marks screen-reader, keyboard and contrast work, together with `enhancement` or `bug`.
+- Pull request: the title is the Conventional Commits subject (it becomes the squash commit). The body has
+  `## Summary` (what changes and why), `## Related issue` (`Closes #<n>`), `## How tested` (the commands run and
+  their results, and what was not run) and `## Checklist`:
+  `- [ ] PR title follows Conventional Commits`, `- [ ] Tests pass`,
+  `- [ ] Documentation updated where behavior changed`, ticked only when true.
+
 ## Red lines
 
-Credentials never appear in PRs, issues, logs, reports or chat. Deploys happen only from `main` through Cloudflare
-Workers Builds; anything sent to an external service needs the maintainer's confirmation. Do not stage blindly:
-review `git status` and stage specific files.
+- Credentials never appear in PRs, issues, logs, reports or chat.
+- Deploys happen only from `main` through Cloudflare Workers Builds. Releases, signing and anything sent to an
+  external service need the maintainer's confirmation.
+- Review `git status` and stage specific files; no blind `git add -A` of unknown files.
