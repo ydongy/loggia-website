@@ -1,5 +1,49 @@
 [
   {
+    "version": "1.2.0",
+    "date": "2026-10-16",
+    "title": {
+      "en": "",
+      "zh": ""
+    },
+    "groups": [
+      {
+        "kind": "added",
+        "items": {
+          "en": [
+            "Send as localhost, a switch in a service's publish settings, for services that only accept requests addressed to localhost, like some development servers; off by default, and available on Free and Pro",
+            "Link details show the last 7 days hour by hour in a strip under the 7-day uptime; hover an hour to see its time and the share of checks that were up"
+          ],
+          "zh": [
+            "服务的发布设置里新增“以 localhost 发送”开关，适用于只接受发往 localhost 的请求的服务，比如某些开发服务器；默认关闭，免费版和 Pro 都能用",
+            "链路详情的 7 天可用率下方新增按小时的状态条，显示过去 7 天每小时的情况；鼠标悬停某一小时，可以看到时间和那一小时检查成功的比例"
+          ]
+        }
+      },
+      {
+        "kind": "fixed",
+        "items": {
+          "en": [
+            "The check for a new cloudflared now runs in the background once a day, not only while Settings › Connector is open; when there is one, the link details offer the update",
+            "If a new cloudflared does not start after an update, Loggia now says it switched back to the previous version, or that cloudflared is not running if that one does not start either, instead of a generic failure",
+            "A single failed check no longer turns a service red: like the link status, it turns red after two checks in a row, so the service list, the menu bar and the link status agree",
+            "When cancelling or deleting a service after a failed publish cannot remove what it set up at Cloudflare, Loggia tries again later instead of leaving it behind",
+            "The cloudflared log no longer grows without limit: once it passes 10 MB, Loggia keeps the latest part and moves the earlier part to a second file, and Export Diagnostics includes both",
+            "If the file where Loggia keeps your services is damaged, Loggia sets it aside as a backup, and when it cannot, it no longer saves over it, so the only copy is not lost"
+          ],
+          "zh": [
+            "检查 cloudflared 有没有新版本，现在每天在后台进行一次，不再要等设置 › 连接器打开；有新版本时，链路详情里会提供更新入口",
+            "更新后新版 cloudflared 启动不了时，Loggia 会说明已经换回上一个版本；如果上一个版本也启动不了，则说明 cloudflared 没有在运行，不再只给笼统的失败提示",
+            "单次检查失败不再让服务变红：和连接状态一样，连续两次失败才变红，服务列表、菜单栏和连接状态保持一致",
+            "发布失败后取消或删除服务时，如果没能清掉已在 Cloudflare 上建好的内容，Loggia 会稍后自动重试，不再留下残留",
+            "cloudflared 日志不再无限增长：超过 10 MB 后，Loggia 只保留最新的一部分，较早的部分移到另一个文件；导出诊断信息时两部分都会包含",
+            "保存服务列表的文件损坏时，Loggia 会把它留作备份；留不了备份时不再覆盖写入，唯一的一份不会丢失"
+          ]
+        }
+      }
+    ]
+  },
+  {
     "version": "1.1.1",
     "date": "2026-10-11",
     "title": {
