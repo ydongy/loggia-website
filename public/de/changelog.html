@@ -38,6 +38,13 @@
 <article>
 <h1>Änderungsprotokoll</h1>
 <!-- releases -->
+<div class="release" id="v1.2.0">
+<div class="release-head"><h2>1.2.0</h2><time datetime="2026-10-16">2026-10-16</time></div>
+<h3>Neu</h3>
+<ul lang="en"><li>Send as localhost, a switch in a service's publish settings, for services that only accept requests addressed to localhost, like some development servers; off by default, and available on Free and Pro</li><li>Link details show the last 7 days hour by hour in a strip under the 7-day uptime; hover an hour to see its time and the share of checks that were up</li></ul>
+<h3>Behoben</h3>
+<ul lang="en"><li>The check for a new cloudflared now runs in the background once a day, not only while Settings › Connector is open; when there is one, the link details offer the update</li><li>If a new cloudflared does not start after an update, Loggia now says it switched back to the previous version, or that cloudflared is not running if that one does not start either, instead of a generic failure</li><li>A single failed check no longer turns a service red: like the link status, it turns red after two checks in a row, so the service list, the menu bar and the link status agree</li><li>When cancelling or deleting a service after a failed publish cannot remove what it set up at Cloudflare, Loggia tries again later instead of leaving it behind</li><li>The cloudflared log no longer grows without limit: once it passes 10 MB, Loggia keeps the latest part and moves the earlier part to a second file, and Export Diagnostics includes both</li><li>If the file where Loggia keeps your services is damaged, Loggia sets it aside as a backup, and when it cannot, it no longer saves over it, so the only copy is not lost</li></ul>
+</div>
 <div class="release" id="v1.1.1">
 <div class="release-head"><h2>1.1.1</h2><time datetime="2026-10-11">2026-10-11</time></div>
 <h3>Geändert</h3>

@@ -38,6 +38,13 @@
 <article>
 <h1>更新日志</h1>
 <!-- releases -->
+<div class="release" id="v1.2.0">
+<div class="release-head"><h2>1.2.0</h2><time datetime="2026-10-16">2026-10-16</time></div>
+<h3>新增</h3>
+<ul><li>服务的发布设置里新增“以 localhost 发送”开关，适用于只接受发往 localhost 的请求的服务，比如某些开发服务器；默认关闭，免费版和 Pro 都能用</li><li>链路详情的 7 天可用率下方新增按小时的状态条，显示过去 7 天每小时的情况；鼠标悬停某一小时，可以看到时间和那一小时检查成功的比例</li></ul>
+<h3>修复</h3>
+<ul><li>检查 cloudflared 有没有新版本，现在每天在后台进行一次，不再要等设置 › 连接器打开；有新版本时，链路详情里会提供更新入口</li><li>更新后新版 cloudflared 启动不了时，Loggia 会说明已经换回上一个版本；如果上一个版本也启动不了，则说明 cloudflared 没有在运行，不再只给笼统的失败提示</li><li>单次检查失败不再让服务变红：和连接状态一样，连续两次失败才变红，服务列表、菜单栏和连接状态保持一致</li><li>发布失败后取消或删除服务时，如果没能清掉已在 Cloudflare 上建好的内容，Loggia 会稍后自动重试，不再留下残留</li><li>cloudflared 日志不再无限增长：超过 10 MB 后，Loggia 只保留最新的一部分，较早的部分移到另一个文件；导出诊断信息时两部分都会包含</li><li>保存服务列表的文件损坏时，Loggia 会把它留作备份；留不了备份时不再覆盖写入，唯一的一份不会丢失</li></ul>
+</div>
 <div class="release" id="v1.1.1">
 <div class="release-head"><h2>1.1.1</h2><time datetime="2026-10-11">2026-10-11</time></div>
 <h3>变更</h3>
