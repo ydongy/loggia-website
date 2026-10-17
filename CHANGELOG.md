@@ -13,6 +13,7 @@ User-facing wording only: no issue or PR numbers, hashes, internal names or tool
 ### Changed
 - The changelog shows each release's changes under Added, Changed, Fixed and Removed headings, like the app's release notes, instead of one list
 - The FAQ answer about proxy apps adds the fake-IP filter step and lists the same steps the app shows
+- The FAQ answer about who can open a protected service mentions trusted networks, whose visitors skip the email code
 - The Terms of Service follow the app's license text section for section, with a new Updates section
 - The Privacy Policy opens with a short summary of what it covers
 - Translations of the legal pages state that the English text is the reference

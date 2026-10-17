@@ -255,7 +255,7 @@
           {
             "id": "who-can-open",
             "q": "Com a proteção de acesso ativada, quem pode abrir o meu serviço?",
-            "a": "<p>Só os endereços de e-mail que você indicar, ou todos de um domínio, se você adicionar <code>@example.com</code>. Os visitantes recebem um código de uso único por e-mail. Por padrão, um login dura 24 horas, e você pode mudar isso.</p>"
+            "a": "<p>Só os endereços de e-mail que você indicar, ou todos de um domínio, se você adicionar <code>@example.com</code>. Os visitantes recebem um código de uso único por e-mail. Por padrão, um login dura 24 horas, e você pode mudar isso.</p><p>Com o Pro, você também pode adicionar redes confiáveis, como o endereço de internet da sua casa ou do escritório. Visitantes de uma rede confiável abrem o serviço sem código, assim como qualquer outra pessoa na mesma Wi-Fi ou rede móvel.</p>"
           },
           {
             "id": "existing-domain",

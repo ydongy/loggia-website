@@ -255,7 +255,7 @@
           {
             "id": "who-can-open",
             "q": "Con la protección de acceso activada, ¿quién puede abrir mi servicio?",
-            "a": "<p>Solo las direcciones de correo que indiques, o cualquiera de un dominio si añades <code>@example.com</code>. Los visitantes reciben por correo un código de un solo uso. Por defecto, una sesión dura 24 horas, y puedes cambiarlo.</p>"
+            "a": "<p>Solo las direcciones de correo que indiques, o cualquiera de un dominio si añades <code>@example.com</code>. Los visitantes reciben por correo un código de un solo uso. Por defecto, una sesión dura 24 horas, y puedes cambiarlo.</p><p>Con Pro también puedes añadir redes de confianza, como la dirección de internet de tu casa o de tu oficina. Los visitantes desde una red de confianza abren el servicio sin código, igual que cualquier otra persona en la misma Wi-Fi o red móvil.</p>"
           },
           {
             "id": "existing-domain",

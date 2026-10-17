@@ -255,7 +255,7 @@
           {
             "id": "who-can-open",
             "q": "Avec la protection d’accès activée, qui peut ouvrir mon service&nbsp;?",
-            "a": "<p>Seules les adresses e-mail que vous indiquez, ou toutes les adresses d’un domaine si vous ajoutez <code>@example.com</code>. Les visiteurs reçoivent un code à usage unique par e-mail. Une connexion dure 24&nbsp;heures par défaut, et vous pouvez modifier cette durée.</p>"
+            "a": "<p>Seules les adresses e-mail que vous indiquez, ou toutes les adresses d’un domaine si vous ajoutez <code>@example.com</code>. Les visiteurs reçoivent un code à usage unique par e-mail. Une connexion dure 24&nbsp;heures par défaut, et vous pouvez modifier cette durée.</p><p>Avec Pro, vous pouvez aussi ajouter des réseaux de confiance, comme l’adresse Internet de votre domicile ou de votre bureau. Les visiteurs venant d’un réseau de confiance ouvrent le service sans code, tout comme les autres personnes du même Wi-Fi ou réseau mobile.</p>"
           },
           {
             "id": "existing-domain",

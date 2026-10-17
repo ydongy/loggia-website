@@ -255,7 +255,7 @@
           {
             "id": "who-can-open",
             "q": "With access protection on, who can open my service?",
-            "a": "<p>Only the email addresses you list, or everyone at a domain if you add <code>@example.com</code>. Visitors get a one-time code by email. A login lasts 24 hours by default, and you can change that.</p>"
+            "a": "<p>Only the email addresses you list, or everyone at a domain if you add <code>@example.com</code>. Visitors get a one-time code by email. A login lasts 24 hours by default, and you can change that.</p><p>With Pro you can also add trusted networks, such as your home or office internet address. Visitors from a trusted network open the service without the code, and so does anyone else on the same Wi-Fi or mobile network.</p>"
           },
           {
             "id": "existing-domain",

@@ -255,7 +255,7 @@
           {
             "id": "who-can-open",
             "q": "Wer kann meinen Dienst bei eingeschaltetem Zugriffsschutz öffnen?",
-            "a": "<p>Nur die E-Mail-Adressen auf Ihrer Liste, oder alle Adressen einer Domain, wenn Sie <code>@example.com</code> eintragen. Besucher erhalten einen Einmalcode per E-Mail. Eine Anmeldung gilt standardmäßig 24 Stunden. Das können Sie ändern.</p>"
+            "a": "<p>Nur die E-Mail-Adressen auf Ihrer Liste, oder alle Adressen einer Domain, wenn Sie <code>@example.com</code> eintragen. Besucher erhalten einen Einmalcode per E-Mail. Eine Anmeldung gilt standardmäßig 24 Stunden. Das können Sie ändern.</p><p>Mit Pro können Sie auch vertrauenswürdige Netzwerke hinzufügen, etwa die Internetadresse Ihres Zuhauses oder Büros. Besucher aus einem vertrauenswürdigen Netzwerk öffnen den Dienst ohne Code, ebenso alle anderen im selben WLAN oder Mobilfunknetz.</p>"
           },
           {
             "id": "existing-domain",
